@@ -6,11 +6,12 @@
 //  Copyright © 2020 Kajetan Kuczorski. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 struct Section: Decodable, Hashable {
     let title: String
     let picture: String
+    let content: [Element]
     let identifier = UUID().uuidString
     
     func hash(into hasher: inout Hasher) {
@@ -19,5 +20,11 @@ struct Section: Decodable, Hashable {
     
     static func ==(lhs: Section, rhs: Section) -> Bool {
         return lhs.title == rhs.title
+    }
+}
+
+extension Section {
+    var image: UIImage? {
+        return UIImage(named: picture)
     }
 }

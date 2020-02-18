@@ -21,6 +21,7 @@ class DataSource {
                 self.collections = []
                 return
         }
+        
         self.collections = collections
     }
 }

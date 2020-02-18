@@ -13,6 +13,8 @@ class Window: Decodable, Hashable {
     let thumbnail: String
     let artworkColor: String
     let content: [Section]
+    let calories: String
+    let timeNeeded: String
     let identifier = UUID().uuidString
     
     func hash(into hasher: inout Hasher) {
@@ -20,7 +22,7 @@ class Window: Decodable, Hashable {
     }
     
     static func ==(lhs: Window, rhs: Window) -> Bool {
-        return lhs.title == rhs.title
+        return lhs.title == rhs.title && lhs.calories == rhs.calories && lhs.timeNeeded == rhs.timeNeeded
     }
 }
 

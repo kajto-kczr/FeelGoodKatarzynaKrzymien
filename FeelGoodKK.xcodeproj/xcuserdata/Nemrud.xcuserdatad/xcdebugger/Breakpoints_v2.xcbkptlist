@@ -20,5 +20,69 @@
             landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "732F1AAD-FDB1-4238-9038-4DA26D7608B5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FeelGoodKK/Data/WindowDataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "WindowDataSource"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "732F1AAD-FDB1-4238-9038-4DA26D7608B5 - 9f515402b92bc3d8"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "globalinit_33_CE1D303EF544613BD6F98F2EB1B52CD2_func0"
+                  moduleName = "FeelGoodKK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beach/Documents/KajtoProjekte/FeelGoodKK/FeelGoodKK/Data/WindowDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "11">
+               </Location>
+               <Location
+                  uuid = "732F1AAD-FDB1-4238-9038-4DA26D7608B5 - 6bae03eb64eaf025"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "FeelGoodKK.WindowDataSource.shared.unsafeMutableAddressor : FeelGoodKK.WindowDataSource"
+                  moduleName = "FeelGoodKK"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/beach/Documents/KajtoProjekte/FeelGoodKK/FeelGoodKK/Data/WindowDataSource.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "13"
+                  endingLineNumber = "13"
+                  offsetFromSymbolStart = "4">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5738F3AA-27DD-40BD-8CE1-B005C0C406BA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FeelGoodKK/Data/DataSource.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "7"
+            endingLineNumber = "7"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

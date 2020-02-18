@@ -8,41 +8,76 @@
 		<key>windows</key>
 		<array>
 			<dict>
+				<key>calories</key>
+				<string>165 kcal</string>
+				<key>timeNeeded</key>
+				<string>15 min</string>
 				<key>title</key>
-				<string>First Exercise Pilates</string>
+				<string>Introduction</string>
 				<key>thumbnail</key>
-				<string>first-exercise-pilates</string>
+				<string>1</string>
 				<key>artworkColor</key>
 				<string>F9B978</string>
 				<key>content</key>
 				<array>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>1. Exercise</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>2. Exercise</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>3. Exercise</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 				</array>
 			</dict>
 			<dict>
+				<key>calories</key>
+				<string>200kcal</string>
+				<key>timeNeeded</key>
+				<string>20 min</string>
 				<key>title</key>
-				<string>Second Exercise Pilates</string>
+				<string>Training A - Beginner</string>
 				<key>thumbnail</key>
-				<string>second-exercise-pilates</string>
+				<string>2</string>
 				<key>artworkColor</key>
-				<string>B5DAA9</string>
+				<string>E5E5E5</string>
 				<key>content</key>
 				<array>
 					<dict>
@@ -50,26 +85,57 @@
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 					<dict>
 						<key>title</key>
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 					<dict>
 						<key>title</key>
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 				</array>
 			</dict>
 			<dict>
+				<key>calories</key>
+				<string>230 kcal</string>
+				<key>timeNeeded</key>
+				<string>25 min</string>
 				<key>title</key>
-				<string>Third Exercise Pilates</string>
+				<string>Training B - Advanced</string>
 				<key>thumbnail</key>
-				<string>third-exercise-pilates</string>
+				<string>3</string>
 				<key>artworkColor</key>
 				<string>F2BD5F</string>
 				<key>content</key>
@@ -79,18 +145,45 @@
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 					<dict>
 						<key>title</key>
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 					<dict>
 						<key>title</key>
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 				</array>
 			</dict>
@@ -102,10 +195,14 @@
 		<key>windows</key>
 		<array>
 			<dict>
+				<key>calories</key>
+				<string>120 kcal</string>
+				<key>timeNeeded</key>
+				<string>20 min</string>
 				<key>title</key>
-				<string>First Exercise Training</string>
+				<string>Training A - Beginner</string>
 				<key>thumbnail</key>
-				<string>first-exercise-training</string>
+				<string>4</string>
 				<key>artworkColor</key>
 				<string>EC9038</string>
 				<key>content</key>
@@ -115,26 +212,57 @@
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 					<dict>
 						<key>title</key>
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 					<dict>
 						<key>title</key>
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 				</array>
 			</dict>
 			<dict>
+				<key>calories</key>
+				<string>165 kcal</string>
+				<key>timeNeeded</key>
+				<string>10 min</string>
 				<key>title</key>
-				<string>Second Exercise Training</string>
+				<string>Training B - Beginner</string>
 				<key>thumbnail</key>
-				<string>second-exercise-training</string>
+				<string>5</string>
 				<key>artworkColor</key>
 				<string>CF7A6F</string>
 				<key>content</key>
@@ -144,26 +272,57 @@
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 					<dict>
 						<key>title</key>
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 					<dict>
 						<key>title</key>
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 				</array>
 			</dict>
 			<dict>
+				<key>calories</key>
+				<string>200 kcal</string>
+				<key>timeNeeded</key>
+				<string>15 min</string>
 				<key>title</key>
-				<string>Third Exercise Training</string>
+				<string>Training X - Advanced</string>
 				<key>thumbnail</key>
-				<string>third-exercise-training</string>
+				<string>6</string>
 				<key>artworkColor</key>
 				<string>AEDFE0</string>
 				<key>content</key>
@@ -173,18 +332,45 @@
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 					<dict>
 						<key>title</key>
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 					<dict>
 						<key>title</key>
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 				</array>
 			</dict>
@@ -196,12 +382,16 @@
 		<key>windows</key>
 		<array>
 			<dict>
+				<key>calories</key>
+				<string>0</string>
+				<key>timeNeeded</key>
+				<string>0</string>
 				<key>title</key>
-				<string>History First Window</string>
+				<string>Progress</string>
 				<key>thumbnail</key>
-				<string>history-first-window</string>
+				<string>7</string>
 				<key>artworkColor</key>
-				<string>EFB9B6</string>
+				<string>C07895</string>
 				<key>content</key>
 				<array>
 					<dict>
@@ -209,26 +399,57 @@
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 					<dict>
 						<key>title</key>
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 					<dict>
 						<key>title</key>
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 				</array>
 			</dict>
 			<dict>
+				<key>calories</key>
+				<string>0</string>
+				<key>timeNeeded</key>
+				<string>0</string>
 				<key>title</key>
-				<string>History Second Window</string>
+				<string>Settings</string>
 				<key>thumbnail</key>
-				<string>history-second-window</string>
+				<string>8</string>
 				<key>artworkColor</key>
 				<string>79E5FF</string>
 				<key>content</key>
@@ -238,41 +459,45 @@
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 					<dict>
 						<key>title</key>
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 					<dict>
 						<key>title</key>
 						<string>Title</string>
 						<key>picture</key>
 						<string>picture</string>
-					</dict>
-				</array>
-			</dict>
-			<dict>
-				<key>title</key>
-				<string>History Third Window</string>
-				<key>thumbnail</key>
-				<string>history-third-window</string>
-				<key>artworkColor</key>
-				<string>EFB9B6</string>
-				<key>content</key>
-				<array>
-					<dict>
-						<key>title</key>
-						<string>Title</string>
-						<key>picture</key>
-						<string>picture</string>
-					</dict>
-					<dict>
-						<key>title</key>
-						<string>Title</string>
-						<key>picture</key>
-						<string>picture</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>url</key>
+								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<key>description</key>
+								<string>Lorem Ipsum</string>
+							</dict>
+						</array>
 					</dict>
 				</array>
 			</dict>

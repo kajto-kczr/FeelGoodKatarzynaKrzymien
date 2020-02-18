@@ -39,7 +39,7 @@ extension LibraryViewController {
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
             item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
             
-            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.6), heightDimension: .fractionalHeight(0.3))
+            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.6), heightDimension: .fractionalHeight(0.4))
             //Horizontal Group
             let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
             
@@ -71,7 +71,7 @@ extension LibraryViewController {
             
             cell.titleLabel.text = window.title
             cell.thumbnailImageView.image = window.image
-            cell.thumbnailImageView.layer.cornerRadius = 10
+            cell.layer.cornerRadius = 10
             cell.thumbnailImageView.layer.masksToBounds = true
             cell.thumbnailImageView.backgroundColor = window.imageBackgroundColor
             
@@ -106,7 +106,10 @@ extension LibraryViewController {
 // MARK: - UICollectionViewDelegate -
 extension LibraryViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(indexPath)
+        guard indexPath.first != 2 else {
+            return
+        }
+        
         if let window = dataSource.itemIdentifier(for: indexPath),
             let windowDetailController = storyboard?.instantiateViewController(identifier: WindowDetailController.identifier, creator: { coder in
                 return WindowDetailController(coder: coder, window: window)

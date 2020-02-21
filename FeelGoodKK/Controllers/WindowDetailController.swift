@@ -45,7 +45,7 @@ final class WindowDetailController: UIViewController, UICollectionViewDataSource
         
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
-        layout.itemSize = CGSize(width: screenWidth * 0.9, height: screenWidth / 3)
+        layout.itemSize = CGSize(width: screenWidth * 0.9, height: screenWidth / 4)
         collectionView.collectionViewLayout = layout
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -86,7 +86,7 @@ final class WindowDetailController: UIViewController, UICollectionViewDataSource
         cell.elementContentView.layer.insertSublayer(gradientLayer, at: 0)
         //        cell.elementContentView.layer.addSublayer(gradientLayer)
         cell.layer.cornerRadius = 10
-        cell.elementTitleLabel.text = window.content[indexPath.row].title
+        cell.elementTitleLabel.text = "\(indexPath.row + 1). " + window.content[indexPath.row].title
         cell.elementImageView.image = window.content[indexPath.row].image
         return cell
     }

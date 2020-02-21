@@ -26,6 +26,7 @@
 		726D70D423FBF300009337F8 /* Element.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726D70D323FBF300009337F8 /* Element.swift */; };
 		726D70D623FBF9B0009337F8 /* ElementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 726D70D523FBF9B0009337F8 /* ElementCell.swift */; };
 		72B0D40923FC4087004E6BFD /* ElementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72B0D40823FC4087004E6BFD /* ElementViewController.swift */; };
+		72B768D623FEB96A00739C30 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 72B768D523FEB96A00739C30 /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		726D70D323FBF300009337F8 /* Element.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Element.swift; sourceTree = "<group>"; };
 		726D70D523FBF9B0009337F8 /* ElementCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementCell.swift; sourceTree = "<group>"; };
 		72B0D40823FC4087004E6BFD /* ElementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElementViewController.swift; sourceTree = "<group>"; };
+		72B768D523FEB96A00739C30 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,11 +66,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A6B6B35C1CFA6780908E59F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		724FFEB023FAD9B700BBA58D = {
 			isa = PBXGroup;
 			children = (
+				72B768D523FEB96A00739C30 /* Podfile */,
 				724FFEBB23FAD9B700BBA58D /* FeelGoodKK */,
 				724FFEBA23FAD9B700BBA58D /* Products */,
+				4A6B6B35C1CFA6780908E59F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -206,6 +217,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72B768D623FEB96A00739C30 /* Podfile in Resources */,
 				724FFEC923FAD9BC00BBA58D /* LaunchScreen.storyboard in Resources */,
 				724FFEC623FAD9BC00BBA58D /* Assets.xcassets in Resources */,
 				724FFED623FADABD00BBA58D /* Collection.plist in Resources */,

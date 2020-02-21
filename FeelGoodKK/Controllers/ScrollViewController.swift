@@ -9,22 +9,21 @@
 import UIKit
 
 class ScrollViewController: UIViewController {
+    
+    var scrollView: UIScrollView!
+    var imageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        imageView = UIImageView(image: UIImage(named: "picture"))
+        scrollView = UIScrollView(frame: view.bounds)
+        scrollView.backgroundColor = .black
+        scrollView.contentSize = imageView.bounds.size
+        scrollView.autoresizingMask = UIView.AutoresizingMask(rawValue: UIView.AutoresizingMask.flexibleWidth.rawValue | UIView.AutoresizingMask.flexibleHeight.rawValue)
+        scrollView.contentOffset = CGPoint(x: 1000, y: 450)
+        
+        scrollView.addSubview(imageView)
+        view.addSubview(scrollView)
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

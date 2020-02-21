@@ -22,46 +22,106 @@
 				<array>
 					<dict>
 						<key>title</key>
-						<string>1. Exercise</string>
+						<string>Hüfttonic</string>
 						<key>picture</key>
-						<string>picture</string>
+						<string>huefttonic</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Damit Ihre Beine auch etwas zu lachen haben. Sie trainieren Ihre vordere Oberschenkelmuskulatur und mobilisieren Ihr Hüftgelenk. Für Menschen in medizinischen Berufen, Handwerker, Schifahrer und Schwimmer.</string>
+								<key>point</key>
+								<string>Strafft die Oberschenkel und mobilisiert Ihre Hüftgelenke</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/92A2dOQw0rM</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Ein Bein vom Boden heben. Unterschenkel sinkt dabei nicht ab. Bein langsam zurückbringen und abstellen.</string>
 							</dict>
 						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>2. Exercise</string>
+						<string>Phönix</string>
 						<key>picture</key>
-						<string>picture</string>
+						<string>phoenix</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Sie werden verblüfft sein über den Widerstand Ihrer verkürzten oder verspannten Muskeln in diesen Bereichen. Unentbehrlich für Menschen, die viel im Sitzen arbeiten oder Auto fahren müssen. Kann bei Männern unglaublich vitalisierend wirken. Wunderbar für Ihre Beine und Ihre Hüfte.</string>
+								<key>point</key>
+								<string>vitalisiert Ihre Hüften, wunderbar für alle, die viel sitzen</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/Emd-BNVfhyc</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Ein Bein Richtung Schulter heben. Beide Hände umfassen das Knie. Das andere Bein langsam ausstrecken. Für einige Atemzüge halten. Das ausgestreckte Bein zurückziehen. Abgehobenes Bein abstellen.</string>
 							</dict>
 						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>3. Exercise</string>
+						<string>Kraftwerk</string>
+						<key>picture</key>
+						<string>kraftwerk</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>info</key>
+								<string>Die Pumping Arms sind eine hervorragende Übung zur Stärkung der Oberarme und des oberen Rückens. Zum Energietanken für Schwimmer, Reiter, Golfer, Segler, Musiker, Radfahrer, Schifahrer, Tennisspieler und alle Sportler, für die Konzentration, fließende Bewegung und Zentrumsstabilität wesentlich sind. Eine Wohltat für alle, die lange stehen müssen.</string>
+								<key>point</key>
+								<string>flacher Bauch, schlanke Oberarme</string>
+								<key>repetition</key>
+								<string>20 x</string>
+								<key>url</key>
+								<string>https://youtu.be/RBPzIW_qGk0</string>
+								<key>description</key>
+								<string>Beide Arme zur Decke heben. Gestreckte Arme bis auf Hüfthöhe absenken. Mit beiden Armen etwa 10 cm oberhalb des Bodens auf und ab pumpen.</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Glücksstern</string>
+						<key>picture</key>
+						<string>gluecksstern</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>info</key>
+								<string>Mit dieser Übung werden Sie bald die Wirkung Ihres Glückssterns spüren. Es ist unglaublich befriedigend, eine scheinbar einfache Koordinationsleistung richtig und von Mal zu Mal besser zu vollbringen. Prädestiniert für Büroarbeiter, Schwimmer, Radfahrer und Läufer zur Verbesserung Ihrer Schultern- und Zentrumsstabilität. Zum Training Ihrer Rückenstrecker und Gesäßmuskulatur. Sie wissen ja, ein schöner Rücken ...</string>
+								<key>point</key>
+								<string>strafft Taille und Gesäß, attraktiver Rücken, Schultern- und Zentrumsstabilität</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
+								<key>url</key>
+								<string>https://youtu.be/9mMscbeD_R0</string>
+								<key>description</key>
+								<string>Auf dem Bauch liegend, Arme und Beine in X-Position vom Körper strecken. Kopf auf kleinem Kissen ablegen oder vom Boden abgehoben halten. Jeweils diagonal zueinander liegenden Arm und Bein vom Körper weg und hinauf verlängern. Wieder ablegen.</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Schulterschön</string>
 						<key>picture</key>
 						<string>picture</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Nehmen Sie diese Übung ruhig auf die leichte Schulter. Sie mobilisieren und stabilisieren damit Ihre Schultergelenke und trainieren Ihre Schulter-, Nacken- und Armmuskulatur. Das Ergebnis fühlt sich nicht nur wunderbar an, es sieht auch sehr gut aus. Eine Chance für alle.</string>
+								<key>point</key>
+								<string>löst Verspannungen, Stressabbau, lockert Ihren Nacken und Ihre Schultern, mobilisiert Ihre Schultergelenke</string>
+								<key>repetition</key>
+								<string>6 x </string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/8Lm16Tox4HY</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Arme über die Seite in einem Halbkreisbogen heben. Finger hinter dem Kopf verschränken. Schultern zu den Ohren heben. Schultern fallen lassen. Beide Ellenbogen leicht nach hinten ziehen. Ellenbogen wieder entspannen, ausstrecken und über die Seite zurückbringen</string>
 							</dict>
 						</array>
 					</dict>
@@ -82,46 +142,106 @@
 				<array>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Hüfttonic</string>
 						<key>picture</key>
-						<string>picture</string>
+						<string>huefttonic</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Damit Ihre Beine auch etwas zu lachen haben. Sie trainieren Ihre vordere Oberschenkelmuskulatur und mobilisieren Ihr Hüftgelenk. Für Menschen in medizinischen Berufen, Handwerker, Schifahrer und Schwimmer.</string>
+								<key>point</key>
+								<string>Strafft die Oberschenkel und mobilisiert Ihre Hüftgelenke</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/92A2dOQw0rM</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Ein Bein vom Boden heben. Unterschenkel sinkt dabei nicht ab. Bein langsam zurückbringen und abstellen.</string>
 							</dict>
 						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Phönix</string>
 						<key>picture</key>
-						<string>picture</string>
+						<string>phoenix</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Sie werden verblüfft sein über den Widerstand Ihrer verkürzten oder verspannten Muskeln in diesen Bereichen. Unentbehrlich für Menschen, die viel im Sitzen arbeiten oder Auto fahren müssen. Kann bei Männern unglaublich vitalisierend wirken. Wunderbar für Ihre Beine und Ihre Hüfte.</string>
+								<key>point</key>
+								<string>vitalisiert Ihre Hüften, wunderbar für alle, die viel sitzen</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/Emd-BNVfhyc</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Ein Bein Richtung Schulter heben. Beide Hände umfassen das Knie. Das andere Bein langsam ausstrecken. Für einige Atemzüge halten. Das ausgestreckte Bein zurückziehen. Abgehobenes Bein abstellen.</string>
 							</dict>
 						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Kraftwerk</string>
+						<key>picture</key>
+						<string>kraftwerk</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>info</key>
+								<string>Die Pumping Arms sind eine hervorragende Übung zur Stärkung der Oberarme und des oberen Rückens. Zum Energietanken für Schwimmer, Reiter, Golfer, Segler, Musiker, Radfahrer, Schifahrer, Tennisspieler und alle Sportler, für die Konzentration, fließende Bewegung und Zentrumsstabilität wesentlich sind. Eine Wohltat für alle, die lange stehen müssen.</string>
+								<key>point</key>
+								<string>flacher Bauch, schlanke Oberarme</string>
+								<key>repetition</key>
+								<string>20 x</string>
+								<key>url</key>
+								<string>https://youtu.be/RBPzIW_qGk0</string>
+								<key>description</key>
+								<string>Beide Arme zur Decke heben. Gestreckte Arme bis auf Hüfthöhe absenken. Mit beiden Armen etwa 10 cm oberhalb des Bodens auf und ab pumpen.</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Glücksstern</string>
+						<key>picture</key>
+						<string>gluecksstern</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>info</key>
+								<string>Mit dieser Übung werden Sie bald die Wirkung Ihres Glückssterns spüren. Es ist unglaublich befriedigend, eine scheinbar einfache Koordinationsleistung richtig und von Mal zu Mal besser zu vollbringen. Prädestiniert für Büroarbeiter, Schwimmer, Radfahrer und Läufer zur Verbesserung Ihrer Schultern- und Zentrumsstabilität. Zum Training Ihrer Rückenstrecker und Gesäßmuskulatur. Sie wissen ja, ein schöner Rücken ...</string>
+								<key>point</key>
+								<string>strafft Taille und Gesäß, attraktiver Rücken, Schultern- und Zentrumsstabilität</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
+								<key>url</key>
+								<string>https://youtu.be/9mMscbeD_R0</string>
+								<key>description</key>
+								<string>Auf dem Bauch liegend, Arme und Beine in X-Position vom Körper strecken. Kopf auf kleinem Kissen ablegen oder vom Boden abgehoben halten. Jeweils diagonal zueinander liegenden Arm und Bein vom Körper weg und hinauf verlängern. Wieder ablegen.</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Schulterschön</string>
 						<key>picture</key>
 						<string>picture</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Nehmen Sie diese Übung ruhig auf die leichte Schulter. Sie mobilisieren und stabilisieren damit Ihre Schultergelenke und trainieren Ihre Schulter-, Nacken- und Armmuskulatur. Das Ergebnis fühlt sich nicht nur wunderbar an, es sieht auch sehr gut aus. Eine Chance für alle.</string>
+								<key>point</key>
+								<string>löst Verspannungen, Stressabbau, lockert Ihren Nacken und Ihre Schultern, mobilisiert Ihre Schultergelenke</string>
+								<key>repetition</key>
+								<string>6 x </string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/8Lm16Tox4HY</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Arme über die Seite in einem Halbkreisbogen heben. Finger hinter dem Kopf verschränken. Schultern zu den Ohren heben. Schultern fallen lassen. Beide Ellenbogen leicht nach hinten ziehen. Ellenbogen wieder entspannen, ausstrecken und über die Seite zurückbringen</string>
 							</dict>
 						</array>
 					</dict>
@@ -142,46 +262,106 @@
 				<array>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Hüfttonic</string>
 						<key>picture</key>
-						<string>picture</string>
+						<string>huefttonic</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Damit Ihre Beine auch etwas zu lachen haben. Sie trainieren Ihre vordere Oberschenkelmuskulatur und mobilisieren Ihr Hüftgelenk. Für Menschen in medizinischen Berufen, Handwerker, Schifahrer und Schwimmer.</string>
+								<key>point</key>
+								<string>Strafft die Oberschenkel und mobilisiert Ihre Hüftgelenke</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/92A2dOQw0rM</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Ein Bein vom Boden heben. Unterschenkel sinkt dabei nicht ab. Bein langsam zurückbringen und abstellen.</string>
 							</dict>
 						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Phönix</string>
 						<key>picture</key>
-						<string>picture</string>
+						<string>phoenix</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Sie werden verblüfft sein über den Widerstand Ihrer verkürzten oder verspannten Muskeln in diesen Bereichen. Unentbehrlich für Menschen, die viel im Sitzen arbeiten oder Auto fahren müssen. Kann bei Männern unglaublich vitalisierend wirken. Wunderbar für Ihre Beine und Ihre Hüfte.</string>
+								<key>point</key>
+								<string>vitalisiert Ihre Hüften, wunderbar für alle, die viel sitzen</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/Emd-BNVfhyc</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Ein Bein Richtung Schulter heben. Beide Hände umfassen das Knie. Das andere Bein langsam ausstrecken. Für einige Atemzüge halten. Das ausgestreckte Bein zurückziehen. Abgehobenes Bein abstellen.</string>
 							</dict>
 						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Kraftwerk</string>
+						<key>picture</key>
+						<string>kraftwerk</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>info</key>
+								<string>Die Pumping Arms sind eine hervorragende Übung zur Stärkung der Oberarme und des oberen Rückens. Zum Energietanken für Schwimmer, Reiter, Golfer, Segler, Musiker, Radfahrer, Schifahrer, Tennisspieler und alle Sportler, für die Konzentration, fließende Bewegung und Zentrumsstabilität wesentlich sind. Eine Wohltat für alle, die lange stehen müssen.</string>
+								<key>point</key>
+								<string>flacher Bauch, schlanke Oberarme</string>
+								<key>repetition</key>
+								<string>20 x</string>
+								<key>url</key>
+								<string>https://youtu.be/RBPzIW_qGk0</string>
+								<key>description</key>
+								<string>Beide Arme zur Decke heben. Gestreckte Arme bis auf Hüfthöhe absenken. Mit beiden Armen etwa 10 cm oberhalb des Bodens auf und ab pumpen.</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Glücksstern</string>
+						<key>picture</key>
+						<string>gluecksstern</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>info</key>
+								<string>Mit dieser Übung werden Sie bald die Wirkung Ihres Glückssterns spüren. Es ist unglaublich befriedigend, eine scheinbar einfache Koordinationsleistung richtig und von Mal zu Mal besser zu vollbringen. Prädestiniert für Büroarbeiter, Schwimmer, Radfahrer und Läufer zur Verbesserung Ihrer Schultern- und Zentrumsstabilität. Zum Training Ihrer Rückenstrecker und Gesäßmuskulatur. Sie wissen ja, ein schöner Rücken ...</string>
+								<key>point</key>
+								<string>strafft Taille und Gesäß, attraktiver Rücken, Schultern- und Zentrumsstabilität</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
+								<key>url</key>
+								<string>https://youtu.be/9mMscbeD_R0</string>
+								<key>description</key>
+								<string>Auf dem Bauch liegend, Arme und Beine in X-Position vom Körper strecken. Kopf auf kleinem Kissen ablegen oder vom Boden abgehoben halten. Jeweils diagonal zueinander liegenden Arm und Bein vom Körper weg und hinauf verlängern. Wieder ablegen.</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Schulterschön</string>
 						<key>picture</key>
 						<string>picture</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Nehmen Sie diese Übung ruhig auf die leichte Schulter. Sie mobilisieren und stabilisieren damit Ihre Schultergelenke und trainieren Ihre Schulter-, Nacken- und Armmuskulatur. Das Ergebnis fühlt sich nicht nur wunderbar an, es sieht auch sehr gut aus. Eine Chance für alle.</string>
+								<key>point</key>
+								<string>löst Verspannungen, Stressabbau, lockert Ihren Nacken und Ihre Schultern, mobilisiert Ihre Schultergelenke</string>
+								<key>repetition</key>
+								<string>6 x </string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/8Lm16Tox4HY</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Arme über die Seite in einem Halbkreisbogen heben. Finger hinter dem Kopf verschränken. Schultern zu den Ohren heben. Schultern fallen lassen. Beide Ellenbogen leicht nach hinten ziehen. Ellenbogen wieder entspannen, ausstrecken und über die Seite zurückbringen</string>
 							</dict>
 						</array>
 					</dict>
@@ -209,46 +389,106 @@
 				<array>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Hüfttonic</string>
 						<key>picture</key>
-						<string>picture</string>
+						<string>huefttonic</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Damit Ihre Beine auch etwas zu lachen haben. Sie trainieren Ihre vordere Oberschenkelmuskulatur und mobilisieren Ihr Hüftgelenk. Für Menschen in medizinischen Berufen, Handwerker, Schifahrer und Schwimmer.</string>
+								<key>point</key>
+								<string>Strafft die Oberschenkel und mobilisiert Ihre Hüftgelenke</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/92A2dOQw0rM</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Ein Bein vom Boden heben. Unterschenkel sinkt dabei nicht ab. Bein langsam zurückbringen und abstellen.</string>
 							</dict>
 						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Phönix</string>
 						<key>picture</key>
-						<string>picture</string>
+						<string>phoenix</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Sie werden verblüfft sein über den Widerstand Ihrer verkürzten oder verspannten Muskeln in diesen Bereichen. Unentbehrlich für Menschen, die viel im Sitzen arbeiten oder Auto fahren müssen. Kann bei Männern unglaublich vitalisierend wirken. Wunderbar für Ihre Beine und Ihre Hüfte.</string>
+								<key>point</key>
+								<string>vitalisiert Ihre Hüften, wunderbar für alle, die viel sitzen</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/Emd-BNVfhyc</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Ein Bein Richtung Schulter heben. Beide Hände umfassen das Knie. Das andere Bein langsam ausstrecken. Für einige Atemzüge halten. Das ausgestreckte Bein zurückziehen. Abgehobenes Bein abstellen.</string>
 							</dict>
 						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Kraftwerk</string>
+						<key>picture</key>
+						<string>kraftwerk</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>info</key>
+								<string>Die Pumping Arms sind eine hervorragende Übung zur Stärkung der Oberarme und des oberen Rückens. Zum Energietanken für Schwimmer, Reiter, Golfer, Segler, Musiker, Radfahrer, Schifahrer, Tennisspieler und alle Sportler, für die Konzentration, fließende Bewegung und Zentrumsstabilität wesentlich sind. Eine Wohltat für alle, die lange stehen müssen.</string>
+								<key>point</key>
+								<string>flacher Bauch, schlanke Oberarme</string>
+								<key>repetition</key>
+								<string>20 x</string>
+								<key>url</key>
+								<string>https://youtu.be/RBPzIW_qGk0</string>
+								<key>description</key>
+								<string>Beide Arme zur Decke heben. Gestreckte Arme bis auf Hüfthöhe absenken. Mit beiden Armen etwa 10 cm oberhalb des Bodens auf und ab pumpen.</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Glücksstern</string>
+						<key>picture</key>
+						<string>gluecksstern</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>info</key>
+								<string>Mit dieser Übung werden Sie bald die Wirkung Ihres Glückssterns spüren. Es ist unglaublich befriedigend, eine scheinbar einfache Koordinationsleistung richtig und von Mal zu Mal besser zu vollbringen. Prädestiniert für Büroarbeiter, Schwimmer, Radfahrer und Läufer zur Verbesserung Ihrer Schultern- und Zentrumsstabilität. Zum Training Ihrer Rückenstrecker und Gesäßmuskulatur. Sie wissen ja, ein schöner Rücken ...</string>
+								<key>point</key>
+								<string>strafft Taille und Gesäß, attraktiver Rücken, Schultern- und Zentrumsstabilität</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
+								<key>url</key>
+								<string>https://youtu.be/9mMscbeD_R0</string>
+								<key>description</key>
+								<string>Auf dem Bauch liegend, Arme und Beine in X-Position vom Körper strecken. Kopf auf kleinem Kissen ablegen oder vom Boden abgehoben halten. Jeweils diagonal zueinander liegenden Arm und Bein vom Körper weg und hinauf verlängern. Wieder ablegen.</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Schulterschön</string>
 						<key>picture</key>
 						<string>picture</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Nehmen Sie diese Übung ruhig auf die leichte Schulter. Sie mobilisieren und stabilisieren damit Ihre Schultergelenke und trainieren Ihre Schulter-, Nacken- und Armmuskulatur. Das Ergebnis fühlt sich nicht nur wunderbar an, es sieht auch sehr gut aus. Eine Chance für alle.</string>
+								<key>point</key>
+								<string>löst Verspannungen, Stressabbau, lockert Ihren Nacken und Ihre Schultern, mobilisiert Ihre Schultergelenke</string>
+								<key>repetition</key>
+								<string>6 x </string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/8Lm16Tox4HY</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Arme über die Seite in einem Halbkreisbogen heben. Finger hinter dem Kopf verschränken. Schultern zu den Ohren heben. Schultern fallen lassen. Beide Ellenbogen leicht nach hinten ziehen. Ellenbogen wieder entspannen, ausstrecken und über die Seite zurückbringen</string>
 							</dict>
 						</array>
 					</dict>
@@ -269,46 +509,106 @@
 				<array>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Hüfttonic</string>
 						<key>picture</key>
-						<string>picture</string>
+						<string>huefttonic</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Damit Ihre Beine auch etwas zu lachen haben. Sie trainieren Ihre vordere Oberschenkelmuskulatur und mobilisieren Ihr Hüftgelenk. Für Menschen in medizinischen Berufen, Handwerker, Schifahrer und Schwimmer.</string>
+								<key>point</key>
+								<string>Strafft die Oberschenkel und mobilisiert Ihre Hüftgelenke</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/92A2dOQw0rM</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Ein Bein vom Boden heben. Unterschenkel sinkt dabei nicht ab. Bein langsam zurückbringen und abstellen.</string>
 							</dict>
 						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Phönix</string>
 						<key>picture</key>
-						<string>picture</string>
+						<string>phoenix</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Sie werden verblüfft sein über den Widerstand Ihrer verkürzten oder verspannten Muskeln in diesen Bereichen. Unentbehrlich für Menschen, die viel im Sitzen arbeiten oder Auto fahren müssen. Kann bei Männern unglaublich vitalisierend wirken. Wunderbar für Ihre Beine und Ihre Hüfte.</string>
+								<key>point</key>
+								<string>vitalisiert Ihre Hüften, wunderbar für alle, die viel sitzen</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/Emd-BNVfhyc</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Ein Bein Richtung Schulter heben. Beide Hände umfassen das Knie. Das andere Bein langsam ausstrecken. Für einige Atemzüge halten. Das ausgestreckte Bein zurückziehen. Abgehobenes Bein abstellen.</string>
 							</dict>
 						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Kraftwerk</string>
+						<key>picture</key>
+						<string>kraftwerk</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>info</key>
+								<string>Die Pumping Arms sind eine hervorragende Übung zur Stärkung der Oberarme und des oberen Rückens. Zum Energietanken für Schwimmer, Reiter, Golfer, Segler, Musiker, Radfahrer, Schifahrer, Tennisspieler und alle Sportler, für die Konzentration, fließende Bewegung und Zentrumsstabilität wesentlich sind. Eine Wohltat für alle, die lange stehen müssen.</string>
+								<key>point</key>
+								<string>flacher Bauch, schlanke Oberarme</string>
+								<key>repetition</key>
+								<string>20 x</string>
+								<key>url</key>
+								<string>https://youtu.be/RBPzIW_qGk0</string>
+								<key>description</key>
+								<string>Beide Arme zur Decke heben. Gestreckte Arme bis auf Hüfthöhe absenken. Mit beiden Armen etwa 10 cm oberhalb des Bodens auf und ab pumpen.</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Glücksstern</string>
+						<key>picture</key>
+						<string>gluecksstern</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>info</key>
+								<string>Mit dieser Übung werden Sie bald die Wirkung Ihres Glückssterns spüren. Es ist unglaublich befriedigend, eine scheinbar einfache Koordinationsleistung richtig und von Mal zu Mal besser zu vollbringen. Prädestiniert für Büroarbeiter, Schwimmer, Radfahrer und Läufer zur Verbesserung Ihrer Schultern- und Zentrumsstabilität. Zum Training Ihrer Rückenstrecker und Gesäßmuskulatur. Sie wissen ja, ein schöner Rücken ...</string>
+								<key>point</key>
+								<string>strafft Taille und Gesäß, attraktiver Rücken, Schultern- und Zentrumsstabilität</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
+								<key>url</key>
+								<string>https://youtu.be/9mMscbeD_R0</string>
+								<key>description</key>
+								<string>Auf dem Bauch liegend, Arme und Beine in X-Position vom Körper strecken. Kopf auf kleinem Kissen ablegen oder vom Boden abgehoben halten. Jeweils diagonal zueinander liegenden Arm und Bein vom Körper weg und hinauf verlängern. Wieder ablegen.</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Schulterschön</string>
 						<key>picture</key>
 						<string>picture</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Nehmen Sie diese Übung ruhig auf die leichte Schulter. Sie mobilisieren und stabilisieren damit Ihre Schultergelenke und trainieren Ihre Schulter-, Nacken- und Armmuskulatur. Das Ergebnis fühlt sich nicht nur wunderbar an, es sieht auch sehr gut aus. Eine Chance für alle.</string>
+								<key>point</key>
+								<string>löst Verspannungen, Stressabbau, lockert Ihren Nacken und Ihre Schultern, mobilisiert Ihre Schultergelenke</string>
+								<key>repetition</key>
+								<string>6 x </string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/8Lm16Tox4HY</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Arme über die Seite in einem Halbkreisbogen heben. Finger hinter dem Kopf verschränken. Schultern zu den Ohren heben. Schultern fallen lassen. Beide Ellenbogen leicht nach hinten ziehen. Ellenbogen wieder entspannen, ausstrecken und über die Seite zurückbringen</string>
 							</dict>
 						</array>
 					</dict>
@@ -329,46 +629,106 @@
 				<array>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Hüfttonic</string>
 						<key>picture</key>
-						<string>picture</string>
+						<string>huefttonic</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Damit Ihre Beine auch etwas zu lachen haben. Sie trainieren Ihre vordere Oberschenkelmuskulatur und mobilisieren Ihr Hüftgelenk. Für Menschen in medizinischen Berufen, Handwerker, Schifahrer und Schwimmer.</string>
+								<key>point</key>
+								<string>Strafft die Oberschenkel und mobilisiert Ihre Hüftgelenke</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/92A2dOQw0rM</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Ein Bein vom Boden heben. Unterschenkel sinkt dabei nicht ab. Bein langsam zurückbringen und abstellen.</string>
 							</dict>
 						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Phönix</string>
 						<key>picture</key>
-						<string>picture</string>
+						<string>phoenix</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Sie werden verblüfft sein über den Widerstand Ihrer verkürzten oder verspannten Muskeln in diesen Bereichen. Unentbehrlich für Menschen, die viel im Sitzen arbeiten oder Auto fahren müssen. Kann bei Männern unglaublich vitalisierend wirken. Wunderbar für Ihre Beine und Ihre Hüfte.</string>
+								<key>point</key>
+								<string>vitalisiert Ihre Hüften, wunderbar für alle, die viel sitzen</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/Emd-BNVfhyc</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Ein Bein Richtung Schulter heben. Beide Hände umfassen das Knie. Das andere Bein langsam ausstrecken. Für einige Atemzüge halten. Das ausgestreckte Bein zurückziehen. Abgehobenes Bein abstellen.</string>
 							</dict>
 						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Kraftwerk</string>
+						<key>picture</key>
+						<string>kraftwerk</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>info</key>
+								<string>Die Pumping Arms sind eine hervorragende Übung zur Stärkung der Oberarme und des oberen Rückens. Zum Energietanken für Schwimmer, Reiter, Golfer, Segler, Musiker, Radfahrer, Schifahrer, Tennisspieler und alle Sportler, für die Konzentration, fließende Bewegung und Zentrumsstabilität wesentlich sind. Eine Wohltat für alle, die lange stehen müssen.</string>
+								<key>point</key>
+								<string>flacher Bauch, schlanke Oberarme</string>
+								<key>repetition</key>
+								<string>20 x</string>
+								<key>url</key>
+								<string>https://youtu.be/RBPzIW_qGk0</string>
+								<key>description</key>
+								<string>Beide Arme zur Decke heben. Gestreckte Arme bis auf Hüfthöhe absenken. Mit beiden Armen etwa 10 cm oberhalb des Bodens auf und ab pumpen.</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Glücksstern</string>
+						<key>picture</key>
+						<string>gluecksstern</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>info</key>
+								<string>Mit dieser Übung werden Sie bald die Wirkung Ihres Glückssterns spüren. Es ist unglaublich befriedigend, eine scheinbar einfache Koordinationsleistung richtig und von Mal zu Mal besser zu vollbringen. Prädestiniert für Büroarbeiter, Schwimmer, Radfahrer und Läufer zur Verbesserung Ihrer Schultern- und Zentrumsstabilität. Zum Training Ihrer Rückenstrecker und Gesäßmuskulatur. Sie wissen ja, ein schöner Rücken ...</string>
+								<key>point</key>
+								<string>strafft Taille und Gesäß, attraktiver Rücken, Schultern- und Zentrumsstabilität</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
+								<key>url</key>
+								<string>https://youtu.be/9mMscbeD_R0</string>
+								<key>description</key>
+								<string>Auf dem Bauch liegend, Arme und Beine in X-Position vom Körper strecken. Kopf auf kleinem Kissen ablegen oder vom Boden abgehoben halten. Jeweils diagonal zueinander liegenden Arm und Bein vom Körper weg und hinauf verlängern. Wieder ablegen.</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Schulterschön</string>
 						<key>picture</key>
 						<string>picture</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Nehmen Sie diese Übung ruhig auf die leichte Schulter. Sie mobilisieren und stabilisieren damit Ihre Schultergelenke und trainieren Ihre Schulter-, Nacken- und Armmuskulatur. Das Ergebnis fühlt sich nicht nur wunderbar an, es sieht auch sehr gut aus. Eine Chance für alle.</string>
+								<key>point</key>
+								<string>löst Verspannungen, Stressabbau, lockert Ihren Nacken und Ihre Schultern, mobilisiert Ihre Schultergelenke</string>
+								<key>repetition</key>
+								<string>6 x </string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/8Lm16Tox4HY</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Arme über die Seite in einem Halbkreisbogen heben. Finger hinter dem Kopf verschränken. Schultern zu den Ohren heben. Schultern fallen lassen. Beide Ellenbogen leicht nach hinten ziehen. Ellenbogen wieder entspannen, ausstrecken und über die Seite zurückbringen</string>
 							</dict>
 						</array>
 					</dict>
@@ -396,46 +756,106 @@
 				<array>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Hüfttonic</string>
 						<key>picture</key>
-						<string>picture</string>
+						<string>huefttonic</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Damit Ihre Beine auch etwas zu lachen haben. Sie trainieren Ihre vordere Oberschenkelmuskulatur und mobilisieren Ihr Hüftgelenk. Für Menschen in medizinischen Berufen, Handwerker, Schifahrer und Schwimmer.</string>
+								<key>point</key>
+								<string>Strafft die Oberschenkel und mobilisiert Ihre Hüftgelenke</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/92A2dOQw0rM</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Ein Bein vom Boden heben. Unterschenkel sinkt dabei nicht ab. Bein langsam zurückbringen und abstellen.</string>
 							</dict>
 						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Phönix</string>
 						<key>picture</key>
-						<string>picture</string>
+						<string>phoenix</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Sie werden verblüfft sein über den Widerstand Ihrer verkürzten oder verspannten Muskeln in diesen Bereichen. Unentbehrlich für Menschen, die viel im Sitzen arbeiten oder Auto fahren müssen. Kann bei Männern unglaublich vitalisierend wirken. Wunderbar für Ihre Beine und Ihre Hüfte.</string>
+								<key>point</key>
+								<string>vitalisiert Ihre Hüften, wunderbar für alle, die viel sitzen</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/Emd-BNVfhyc</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Ein Bein Richtung Schulter heben. Beide Hände umfassen das Knie. Das andere Bein langsam ausstrecken. Für einige Atemzüge halten. Das ausgestreckte Bein zurückziehen. Abgehobenes Bein abstellen.</string>
 							</dict>
 						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Kraftwerk</string>
+						<key>picture</key>
+						<string>kraftwerk</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>info</key>
+								<string>Die Pumping Arms sind eine hervorragende Übung zur Stärkung der Oberarme und des oberen Rückens. Zum Energietanken für Schwimmer, Reiter, Golfer, Segler, Musiker, Radfahrer, Schifahrer, Tennisspieler und alle Sportler, für die Konzentration, fließende Bewegung und Zentrumsstabilität wesentlich sind. Eine Wohltat für alle, die lange stehen müssen.</string>
+								<key>point</key>
+								<string>flacher Bauch, schlanke Oberarme</string>
+								<key>repetition</key>
+								<string>20 x</string>
+								<key>url</key>
+								<string>https://youtu.be/RBPzIW_qGk0</string>
+								<key>description</key>
+								<string>Beide Arme zur Decke heben. Gestreckte Arme bis auf Hüfthöhe absenken. Mit beiden Armen etwa 10 cm oberhalb des Bodens auf und ab pumpen.</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Glücksstern</string>
+						<key>picture</key>
+						<string>gluecksstern</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>info</key>
+								<string>Mit dieser Übung werden Sie bald die Wirkung Ihres Glückssterns spüren. Es ist unglaublich befriedigend, eine scheinbar einfache Koordinationsleistung richtig und von Mal zu Mal besser zu vollbringen. Prädestiniert für Büroarbeiter, Schwimmer, Radfahrer und Läufer zur Verbesserung Ihrer Schultern- und Zentrumsstabilität. Zum Training Ihrer Rückenstrecker und Gesäßmuskulatur. Sie wissen ja, ein schöner Rücken ...</string>
+								<key>point</key>
+								<string>strafft Taille und Gesäß, attraktiver Rücken, Schultern- und Zentrumsstabilität</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
+								<key>url</key>
+								<string>https://youtu.be/9mMscbeD_R0</string>
+								<key>description</key>
+								<string>Auf dem Bauch liegend, Arme und Beine in X-Position vom Körper strecken. Kopf auf kleinem Kissen ablegen oder vom Boden abgehoben halten. Jeweils diagonal zueinander liegenden Arm und Bein vom Körper weg und hinauf verlängern. Wieder ablegen.</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Schulterschön</string>
 						<key>picture</key>
 						<string>picture</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Nehmen Sie diese Übung ruhig auf die leichte Schulter. Sie mobilisieren und stabilisieren damit Ihre Schultergelenke und trainieren Ihre Schulter-, Nacken- und Armmuskulatur. Das Ergebnis fühlt sich nicht nur wunderbar an, es sieht auch sehr gut aus. Eine Chance für alle.</string>
+								<key>point</key>
+								<string>löst Verspannungen, Stressabbau, lockert Ihren Nacken und Ihre Schultern, mobilisiert Ihre Schultergelenke</string>
+								<key>repetition</key>
+								<string>6 x </string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/8Lm16Tox4HY</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Arme über die Seite in einem Halbkreisbogen heben. Finger hinter dem Kopf verschränken. Schultern zu den Ohren heben. Schultern fallen lassen. Beide Ellenbogen leicht nach hinten ziehen. Ellenbogen wieder entspannen, ausstrecken und über die Seite zurückbringen</string>
 							</dict>
 						</array>
 					</dict>
@@ -456,46 +876,106 @@
 				<array>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Hüfttonic</string>
 						<key>picture</key>
-						<string>picture</string>
+						<string>huefttonic</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Damit Ihre Beine auch etwas zu lachen haben. Sie trainieren Ihre vordere Oberschenkelmuskulatur und mobilisieren Ihr Hüftgelenk. Für Menschen in medizinischen Berufen, Handwerker, Schifahrer und Schwimmer.</string>
+								<key>point</key>
+								<string>Strafft die Oberschenkel und mobilisiert Ihre Hüftgelenke</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/92A2dOQw0rM</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Ein Bein vom Boden heben. Unterschenkel sinkt dabei nicht ab. Bein langsam zurückbringen und abstellen.</string>
 							</dict>
 						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Phönix</string>
 						<key>picture</key>
-						<string>picture</string>
+						<string>phoenix</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Sie werden verblüfft sein über den Widerstand Ihrer verkürzten oder verspannten Muskeln in diesen Bereichen. Unentbehrlich für Menschen, die viel im Sitzen arbeiten oder Auto fahren müssen. Kann bei Männern unglaublich vitalisierend wirken. Wunderbar für Ihre Beine und Ihre Hüfte.</string>
+								<key>point</key>
+								<string>vitalisiert Ihre Hüften, wunderbar für alle, die viel sitzen</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/Emd-BNVfhyc</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Ein Bein Richtung Schulter heben. Beide Hände umfassen das Knie. Das andere Bein langsam ausstrecken. Für einige Atemzüge halten. Das ausgestreckte Bein zurückziehen. Abgehobenes Bein abstellen.</string>
 							</dict>
 						</array>
 					</dict>
 					<dict>
 						<key>title</key>
-						<string>Title</string>
+						<string>Kraftwerk</string>
+						<key>picture</key>
+						<string>kraftwerk</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>info</key>
+								<string>Die Pumping Arms sind eine hervorragende Übung zur Stärkung der Oberarme und des oberen Rückens. Zum Energietanken für Schwimmer, Reiter, Golfer, Segler, Musiker, Radfahrer, Schifahrer, Tennisspieler und alle Sportler, für die Konzentration, fließende Bewegung und Zentrumsstabilität wesentlich sind. Eine Wohltat für alle, die lange stehen müssen.</string>
+								<key>point</key>
+								<string>flacher Bauch, schlanke Oberarme</string>
+								<key>repetition</key>
+								<string>20 x</string>
+								<key>url</key>
+								<string>https://youtu.be/RBPzIW_qGk0</string>
+								<key>description</key>
+								<string>Beide Arme zur Decke heben. Gestreckte Arme bis auf Hüfthöhe absenken. Mit beiden Armen etwa 10 cm oberhalb des Bodens auf und ab pumpen.</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Glücksstern</string>
+						<key>picture</key>
+						<string>gluecksstern</string>
+						<key>content</key>
+						<array>
+							<dict>
+								<key>info</key>
+								<string>Mit dieser Übung werden Sie bald die Wirkung Ihres Glückssterns spüren. Es ist unglaublich befriedigend, eine scheinbar einfache Koordinationsleistung richtig und von Mal zu Mal besser zu vollbringen. Prädestiniert für Büroarbeiter, Schwimmer, Radfahrer und Läufer zur Verbesserung Ihrer Schultern- und Zentrumsstabilität. Zum Training Ihrer Rückenstrecker und Gesäßmuskulatur. Sie wissen ja, ein schöner Rücken ...</string>
+								<key>point</key>
+								<string>strafft Taille und Gesäß, attraktiver Rücken, Schultern- und Zentrumsstabilität</string>
+								<key>repetition</key>
+								<string>6 x je Seite</string>
+								<key>url</key>
+								<string>https://youtu.be/9mMscbeD_R0</string>
+								<key>description</key>
+								<string>Auf dem Bauch liegend, Arme und Beine in X-Position vom Körper strecken. Kopf auf kleinem Kissen ablegen oder vom Boden abgehoben halten. Jeweils diagonal zueinander liegenden Arm und Bein vom Körper weg und hinauf verlängern. Wieder ablegen.</string>
+							</dict>
+						</array>
+					</dict>
+					<dict>
+						<key>title</key>
+						<string>Schulterschön</string>
 						<key>picture</key>
 						<string>picture</string>
 						<key>content</key>
 						<array>
 							<dict>
+								<key>info</key>
+								<string>Nehmen Sie diese Übung ruhig auf die leichte Schulter. Sie mobilisieren und stabilisieren damit Ihre Schultergelenke und trainieren Ihre Schulter-, Nacken- und Armmuskulatur. Das Ergebnis fühlt sich nicht nur wunderbar an, es sieht auch sehr gut aus. Eine Chance für alle.</string>
+								<key>point</key>
+								<string>löst Verspannungen, Stressabbau, lockert Ihren Nacken und Ihre Schultern, mobilisiert Ihre Schultergelenke</string>
+								<key>repetition</key>
+								<string>6 x </string>
 								<key>url</key>
-								<string>https://www.youtube.com/watch?v=92A2dOQw0rM</string>
+								<string>https://youtu.be/8Lm16Tox4HY</string>
 								<key>description</key>
-								<string>Lorem Ipsum</string>
+								<string>Arme über die Seite in einem Halbkreisbogen heben. Finger hinter dem Kopf verschränken. Schultern zu den Ohren heben. Schultern fallen lassen. Beide Ellenbogen leicht nach hinten ziehen. Ellenbogen wieder entspannen, ausstrecken und über die Seite zurückbringen</string>
 							</dict>
 						</array>
 					</dict>

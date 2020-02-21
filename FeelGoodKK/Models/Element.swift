@@ -11,6 +11,9 @@ import Foundation
 struct Element: Decodable {
     let url: String
     let description: String
+    let info: String
+    let repetition: String
+    let point: String
 }
 
 extension Element: Hashable {

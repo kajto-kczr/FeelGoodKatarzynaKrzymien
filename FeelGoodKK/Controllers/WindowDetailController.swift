@@ -8,6 +8,9 @@
 
 import UIKit
 
+// https://sweettutos.com/2015/06/03/swift-how-to-read-and-write-into-plist-files/
+// https://exceptionshub.com/save-data-to-plist-file-in-swift-2.html
+
 final class WindowDetailController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     
     static let identifier = String(describing: WindowDetailController.self)
@@ -19,7 +22,9 @@ final class WindowDetailController: UIViewController, UICollectionViewDataSource
     @IBOutlet weak var timeImageView: UIImageView!
     @IBOutlet weak var caloriesImageView: UIImageView!
     @IBOutlet weak var caloriesLabel: UILabel!
-    
+    var plistPath: String!
+    // test
+//    var collectionArray: [Dictionary] = [] as! [Dictionary]
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
@@ -27,7 +32,14 @@ final class WindowDetailController: UIViewController, UICollectionViewDataSource
     
     init?(coder: NSCoder, window: Window) {
         self.window = window
+        
         super.init(coder: coder)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        plistPath = appDelegate.plistPathInDocuments
+
     }
     
     override func viewDidLoad() {
@@ -51,6 +63,10 @@ final class WindowDetailController: UIViewController, UICollectionViewDataSource
         collectionView.delegate = self
         
         
+        // Not Working rn
+        if window.isFavorite == true {
+            addToFavoriteButton.setTitle("Favorite!", for: UIControl.State())
+        }
         windowCoverImageView.image = window.image
         windowCoverImageView.backgroundColor = window.imageBackgroundColor
         //        guard window.timeNeeded != "0" else {
@@ -64,6 +80,11 @@ final class WindowDetailController: UIViewController, UICollectionViewDataSource
         timeLabel.text = window.timeNeeded
         caloriesLabel.text = window.calories
     }
+    
+    @IBAction func addToFavoritesTapped(_ sender: Any) {
+        print(window.title)
+    }
+    
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -93,10 +114,11 @@ final class WindowDetailController: UIViewController, UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let section = window.content[indexPath.row]
-        print(section.content)
         let elementViewController = storyboard?.instantiateViewController(identifier: ElementViewController.identifier, creator: { coder in
             return ElementViewController(coder: coder, element: section.content)
         })
+        elementViewController?.modalPresentationStyle = .fullScreen
+        UserDefaults.standard.set(window.content[indexPath.row].title, forKey: "title")
         present(elementViewController!, animated: true)
     }
 }

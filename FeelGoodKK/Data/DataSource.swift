@@ -12,6 +12,7 @@ class DataSource {
     
     static let shared = DataSource()
     var collections: [LibraryCollection]
+    var favorites: [Window] = []
     private let decoder = PropertyListDecoder()
     
     private init() {
@@ -23,5 +24,18 @@ class DataSource {
         }
         
         self.collections = collections
+        getFavorites()
+    }
+}
+
+extension DataSource {
+    func getFavorites() {
+        for collection in collections {
+            for window in collection.windows {
+                if window.isFavorite == true {
+                    favorites.append(window)
+                }
+            }
+        }
     }
 }

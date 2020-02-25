@@ -10,11 +10,33 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    // MARK: - try writing to plist -
+    var plistPathInDocuments: String = String()
+    
+    func preparePlistForUse() {
+        // document directory path
+        let rootPath = NSSearchPathForDirectoriesInDomains(FileManager.SearchPathDirectory.documentDirectory, .userDomainMask, true)[0]
+        // create a new path - main bundle is read-only
+        plistPathInDocuments = rootPath + "/collection.plist"
+        if !FileManager.default.fileExists(atPath: plistPathInDocuments) {
+            let plistPathInBundle = Bundle.main.path(forResource: "Collection", ofType: "plist")
+            // check if copied path already exist
+            do {
+                try FileManager.default.copyItem(atPath: plistPathInBundle!, toPath: plistPathInDocuments)
+            } catch {
+                print("Error occured while copying file to document \(error)")
+            }
+        }
+    }
 
-
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        self.preparePlistForUse()
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        self.preparePlistForUse()
         return true
     }
 

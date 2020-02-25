@@ -11,12 +11,13 @@ import WebKit
 
 class ElementViewController: UIViewController {
     
-    
     static let identifier = String(describing: ElementViewController.self)
     @IBOutlet weak var videoView: WKWebView!
     private let element: [Element]
     @IBOutlet weak var doneItButton: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var navBarTitle: UINavigationItem!
+    
     
     required init?(coder: NSCoder) {
         fatalError("inint(coder:) has not been implemented")
@@ -35,6 +36,9 @@ class ElementViewController: UIViewController {
         super.viewDidLoad()
         
         setupViews()
+        let titleString = UserDefaults.standard.string(forKey: "title") ?? "Defaults Not Working"
+        navBarTitle.title = titleString
+        
         
     }
     
@@ -48,7 +52,7 @@ class ElementViewController: UIViewController {
         let screenWidth = screenSize.width
         self.view.bringSubviewToFront(doneItButton)
         
-        self.scrollView.contentSize = CGSize(width: screenWidth, height: screenSize.height * 1.1)
+        self.scrollView.contentSize = CGSize(width: screenWidth, height: screenSize.height * 0.7)
         
         
         let lbl1 = UILabel(frame: CGRect(x: 10, y: 8, width: screenWidth * 0.9, height: 20))
@@ -56,22 +60,33 @@ class ElementViewController: UIViewController {
         lbl1.myLabel()
         scrollView.addSubview(lbl1)
         
-        let lbl2 = UILabel(frame: CGRect(x: 10, y: lbl1.frame.maxY + 25, width: lbl1.bounds.width, height: 20))
-        lbl2.text = "Description: \n" + element[0].description
+        let lbl2 = UILabel(frame: CGRect(x: 10, y: lbl1.frame.maxY + 25, width: screenWidth * 0.9, height: 20))
+        lbl2.text = "Description: \n\n" + element[0].description
         lbl2.myLabel()
         scrollView.addSubview(lbl2)
+        
+        
 
-        let lbl3 = UILabel(frame: CGRect(x: scrollView.frame.midX, y: lbl2.frame.maxY + 25, width: lbl1.bounds.width, height: 20))
-        lbl3.text = "Repeat: \n" + element[0].repetition
+        let lbl3 = UILabel(frame: CGRect(x: 10, y: lbl2.frame.maxY + 25, width: screenWidth * 0.9, height: 20))
+//        let lbl3 = UILabel()
+        lbl3.text = "Repeat: \n\n" + element[0].repetition
         print(scrollView.frame.midX)
         print(lbl3.frame.midX)
         lbl3.myLabel()
         scrollView.addSubview(lbl3)
 
-        let lbl4 = UILabel(frame: CGRect(x: 10, y: lbl3.frame.maxY + 25, width: lbl1.bounds.width, height: 20))
-        lbl4.text = "Purpose: \n" + element[0].point
+        let lbl4 = UILabel(frame: CGRect(x: 10, y: lbl3.frame.maxY + 25, width: screenWidth * 0.9, height: 20))
+//        let lbl4 = UILabel()
+        lbl4.text = "Purpose: \n\n" + element[0].point
         lbl4.myLabel()
         scrollView.addSubview(lbl4)
+        
+        scrollView.sizeToFit()
+        
+        lbl1.center.x = self.view.center.x
+        lbl2.center.x = self.view.center.x
+        lbl3.center.x = self.view.center.x
+        lbl4.center.x = self.view.center.x
         
         
     }
@@ -80,7 +95,11 @@ class ElementViewController: UIViewController {
         guard let youtubeURL = URL(string: videoID) else {
             return
         }
-//        videoView.load(URLRequest(url: youtubeURL))
+        videoView.load(URLRequest(url: youtubeURL))
+    }
+    
+    @IBAction func backBtnTapped(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 }
 
@@ -95,5 +114,8 @@ extension UILabel {
         numberOfLines = 0
         lineBreakMode = .byWordWrapping
         sizeToFit()
+//        widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width)
+        
+        
     }
 }

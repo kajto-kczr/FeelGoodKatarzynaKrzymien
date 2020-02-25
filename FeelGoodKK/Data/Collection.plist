@@ -8,6 +8,8 @@
 		<key>windows</key>
 		<array>
 			<dict>
+				<key>isFavorite</key>
+				<true/>
 				<key>calories</key>
 				<string>165 kcal</string>
 				<key>timeNeeded</key>
@@ -128,6 +130,8 @@
 				</array>
 			</dict>
 			<dict>
+				<key>isFavorite</key>
+				<true/>
 				<key>calories</key>
 				<string>200kcal</string>
 				<key>timeNeeded</key>
@@ -250,6 +254,8 @@
 			<dict>
 				<key>calories</key>
 				<string>230 kcal</string>
+				<key>isFavorite</key>
+				<false/>
 				<key>timeNeeded</key>
 				<string>25 min</string>
 				<key>title</key>
@@ -375,6 +381,8 @@
 		<key>windows</key>
 		<array>
 			<dict>
+				<key>isFavorite</key>
+				<false/>
 				<key>calories</key>
 				<string>120 kcal</string>
 				<key>timeNeeded</key>
@@ -495,6 +503,8 @@
 				</array>
 			</dict>
 			<dict>
+				<key>isFavorite</key>
+				<false/>
 				<key>calories</key>
 				<string>165 kcal</string>
 				<key>timeNeeded</key>
@@ -615,6 +625,8 @@
 				</array>
 			</dict>
 			<dict>
+				<key>isFavorite</key>
+				<false/>
 				<key>calories</key>
 				<string>200 kcal</string>
 				<key>timeNeeded</key>
@@ -742,6 +754,8 @@
 		<key>windows</key>
 		<array>
 			<dict>
+				<key>isFavorite</key>
+				<false/>
 				<key>calories</key>
 				<string>0</string>
 				<key>timeNeeded</key>
@@ -862,6 +876,8 @@
 				</array>
 			</dict>
 			<dict>
+				<key>isFavorite</key>
+				<false/>
 				<key>calories</key>
 				<string>0</string>
 				<key>timeNeeded</key>

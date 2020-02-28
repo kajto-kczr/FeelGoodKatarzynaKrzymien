@@ -27,12 +27,13 @@ final class TitleSuplementaryView: UICollectionReusableView {
         textLabel.font = UIFont.preferredFont(forTextStyle: .title2)
         textLabel.translatesAutoresizingMaskIntoConstraints = false
         
+        // was inset,-inset x2
         let inset: CGFloat = 10
         NSLayoutConstraint.activate([
             textLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: inset),
             textLabel.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -inset),
-            textLabel.topAnchor.constraint(equalTo: topAnchor, constant: inset),
-            textLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -inset)
+            textLabel.topAnchor.constraint(equalTo: topAnchor, constant: 0),
+            textLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: 0)
         ])
     }
 }

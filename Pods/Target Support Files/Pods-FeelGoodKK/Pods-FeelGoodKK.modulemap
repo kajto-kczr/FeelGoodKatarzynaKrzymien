@@ -1,0 +1,6 @@
+framework module Pods_FeelGoodKK {
+  umbrella header "Pods-FeelGoodKK-umbrella.h"
+
+  export *
+  module * { export * }
+}

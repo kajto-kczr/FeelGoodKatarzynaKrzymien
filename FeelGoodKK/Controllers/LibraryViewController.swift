@@ -37,9 +37,14 @@ extension LibraryViewController {
             
             let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalWidth(1.0))
             let item = NSCollectionLayoutItem(layoutSize: itemSize)
-            item.contentInsets = NSDirectionalEdgeInsets(top: 10, leading: 10, bottom: 10, trailing: 10)
+            item.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 4, bottom: 4, trailing: 4)
+            var groupSize: NSCollectionLayoutSize!
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.3), heightDimension: .fractionalHeight(0.3))
+            } else {
+                groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalHeight(0.3))
+            }
             
-            let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalHeight(0.3))
             //Horizontal Group
             let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
             
@@ -70,6 +75,8 @@ extension LibraryViewController {
             }
             
             cell.titleLabel.text = window.title
+            cell.titleLabel.numberOfLines = 0
+            cell.titleLabel.lineBreakMode = .byWordWrapping
             cell.thumbnailImageView.image = window.image
             cell.layer.cornerRadius = 10
             cell.thumbnailImageView.layer.masksToBounds = true
@@ -84,6 +91,8 @@ extension LibraryViewController {
                 
                 let libraryCollection = self.dataSource.snapshot().sectionIdentifiers[indexPath.section]
                 titleSuplementaryView.textLabel.text = libraryCollection.title
+                titleSuplementaryView.textLabel.textColor = UIColor(red: 2/255, green: 115/255, blue: 104/255, alpha: 0.85)
+                
                 return titleSuplementaryView
             } else {
                 return nil
@@ -107,6 +116,15 @@ extension LibraryViewController {
 extension LibraryViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         guard indexPath.first != 2 else {
+            switch indexPath.row {
+            case 0:
+                let progressViewController = storyboard?.instantiateViewController(withIdentifier: ProgressViewController.identifier)
+                show(progressViewController!, sender: nil)
+            case 1:
+                print("Setting Tapped")
+            default:
+                break
+            }
             return
         }
         

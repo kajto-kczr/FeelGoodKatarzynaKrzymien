@@ -15,7 +15,7 @@ class Window: Decodable, Hashable {
     let content: [Section]
     let calories: String
     let timeNeeded: String
-    let isFavorite: Bool
+    let id: Int
     let identifier = UUID().uuidString
     
     func hash(into hasher: inout Hasher) {

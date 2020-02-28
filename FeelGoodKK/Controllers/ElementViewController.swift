@@ -14,9 +14,9 @@ class ElementViewController: UIViewController {
     static let identifier = String(describing: ElementViewController.self)
     @IBOutlet weak var videoView: WKWebView!
     private let element: [Element]
-    @IBOutlet weak var doneItButton: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var navBarTitle: UINavigationItem!
+    var progressArray: [String] = []
+    @IBOutlet weak var backgroundView: UIView!
     
     
     required init?(coder: NSCoder) {
@@ -36,23 +36,46 @@ class ElementViewController: UIViewController {
         super.viewDidLoad()
         
         setupViews()
-        let titleString = UserDefaults.standard.string(forKey: "title") ?? "Defaults Not Working"
-        navBarTitle.title = titleString
+        let titleString = UserDefaults.standard.string(forKey: "title") ?? "Feel Good"
+        title = titleString
+        let arr = UserDefaults.standard.array(forKey: "progressArray")
+        if arr != nil {
+            progressArray = arr as! [String]
+        }
         
+        
+        let barButton = UIBarButtonItem(title: "Done it!", style: UIBarButtonItem.Style.plain, target: self, action: #selector(doneTapped))
+        self.navigationItem.rightBarButtonItem = barButton
+        
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            NSLayoutConstraint.activate([videoView.heightAnchor.constraint(equalToConstant: 400)])
+        } else {
+            NSLayoutConstraint.activate([videoView.heightAnchor.constraint(equalToConstant: 200)])
+        }
+        
+        backgroundView.backgroundColor = UIColor(red: 2/255, green: 72/255, blue: 115/255, alpha: 0.45)
         
     }
     
-    @IBAction func doneButtonTapped(_ sender: Any) {
-        print("Done Tapped")
-        self.dismiss(animated: true, completion: nil)
+    @objc func doneTapped() {
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd"
+        let dateString = formatter.string(from: date)
+        let stringForArray = "\(dateString);\(String(title!))"
+        progressArray.append(stringForArray)
+        UserDefaults.standard.set(progressArray, forKey: "progressArray")
+        let alert = UIAlertController(title: "Well done!", message: "Exercise added to your progress history.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        present(alert, animated: true)
     }
+    
     
     private func setupViews() {
         let screenSize = UIScreen.main.bounds
         let screenWidth = screenSize.width
-        self.view.bringSubviewToFront(doneItButton)
         
-        self.scrollView.contentSize = CGSize(width: screenWidth, height: screenSize.height * 0.7)
+        self.scrollView.contentSize = CGSize(width: screenWidth - 48, height: screenSize.height * 0.7)
         
         
         let lbl1 = UILabel(frame: CGRect(x: 10, y: 8, width: screenWidth * 0.9, height: 20))
@@ -66,17 +89,15 @@ class ElementViewController: UIViewController {
         scrollView.addSubview(lbl2)
         
         
-
+        
         let lbl3 = UILabel(frame: CGRect(x: 10, y: lbl2.frame.maxY + 25, width: screenWidth * 0.9, height: 20))
-//        let lbl3 = UILabel()
         lbl3.text = "Repeat: \n\n" + element[0].repetition
         print(scrollView.frame.midX)
         print(lbl3.frame.midX)
         lbl3.myLabel()
         scrollView.addSubview(lbl3)
-
+        
         let lbl4 = UILabel(frame: CGRect(x: 10, y: lbl3.frame.maxY + 25, width: screenWidth * 0.9, height: 20))
-//        let lbl4 = UILabel()
         lbl4.text = "Purpose: \n\n" + element[0].point
         lbl4.myLabel()
         scrollView.addSubview(lbl4)
@@ -106,16 +127,13 @@ class ElementViewController: UIViewController {
 extension UILabel {
     func myLabel() {
         textAlignment = .center
-        textColor = .red
-        backgroundColor = .lightGray
+        textColor = .white
+        backgroundColor = UIColor(red: 83/255, green: 119/255, blue: 166/255, alpha: 0.65)
         layer.cornerRadius = 10
         layer.masksToBounds = true
         font = UIFont.systemFont(ofSize: 17)
         numberOfLines = 0
         lineBreakMode = .byWordWrapping
         sizeToFit()
-//        widthAnchor.constraint(equalToConstant: UIScreen.main.bounds.width)
-        
-        
     }
 }

@@ -8,8 +8,8 @@
 		<key>windows</key>
 		<array>
 			<dict>
-				<key>isFavorite</key>
-				<true/>
+				<key>id</key>
+				<integer>1</integer>
 				<key>calories</key>
 				<string>165 kcal</string>
 				<key>timeNeeded</key>
@@ -19,7 +19,7 @@
 				<key>thumbnail</key>
 				<string>1</string>
 				<key>artworkColor</key>
-				<string>F9B978</string>
+				<string>5377A6</string>
 				<key>content</key>
 				<array>
 					<dict>
@@ -130,8 +130,8 @@
 				</array>
 			</dict>
 			<dict>
-				<key>isFavorite</key>
-				<true/>
+				<key>id</key>
+				<integer>2</integer>
 				<key>calories</key>
 				<string>200kcal</string>
 				<key>timeNeeded</key>
@@ -139,9 +139,9 @@
 				<key>title</key>
 				<string>Training A - Beginner</string>
 				<key>thumbnail</key>
-				<string>2</string>
+				<string>6</string>
 				<key>artworkColor</key>
-				<string>E5E5E5</string>
+				<string>5377A6</string>
 				<key>content</key>
 				<array>
 					<dict>
@@ -252,10 +252,10 @@
 				</array>
 			</dict>
 			<dict>
+				<key>id</key>
+				<integer>3</integer>
 				<key>calories</key>
 				<string>230 kcal</string>
-				<key>isFavorite</key>
-				<false/>
 				<key>timeNeeded</key>
 				<string>25 min</string>
 				<key>title</key>
@@ -263,7 +263,7 @@
 				<key>thumbnail</key>
 				<string>3</string>
 				<key>artworkColor</key>
-				<string>F2BD5F</string>
+				<string>5377A6</string>
 				<key>content</key>
 				<array>
 					<dict>
@@ -381,8 +381,8 @@
 		<key>windows</key>
 		<array>
 			<dict>
-				<key>isFavorite</key>
-				<false/>
+				<key>id</key>
+				<integer>4</integer>
 				<key>calories</key>
 				<string>120 kcal</string>
 				<key>timeNeeded</key>
@@ -392,7 +392,7 @@
 				<key>thumbnail</key>
 				<string>4</string>
 				<key>artworkColor</key>
-				<string>EC9038</string>
+				<string>025959</string>
 				<key>content</key>
 				<array>
 					<dict>
@@ -503,8 +503,8 @@
 				</array>
 			</dict>
 			<dict>
-				<key>isFavorite</key>
-				<false/>
+				<key>id</key>
+				<integer>5</integer>
 				<key>calories</key>
 				<string>165 kcal</string>
 				<key>timeNeeded</key>
@@ -514,7 +514,7 @@
 				<key>thumbnail</key>
 				<string>5</string>
 				<key>artworkColor</key>
-				<string>CF7A6F</string>
+				<string>025959</string>
 				<key>content</key>
 				<array>
 					<dict>
@@ -625,8 +625,8 @@
 				</array>
 			</dict>
 			<dict>
-				<key>isFavorite</key>
-				<false/>
+				<key>id</key>
+				<integer>6</integer>
 				<key>calories</key>
 				<string>200 kcal</string>
 				<key>timeNeeded</key>
@@ -636,7 +636,7 @@
 				<key>thumbnail</key>
 				<string>6</string>
 				<key>artworkColor</key>
-				<string>AEDFE0</string>
+				<string>025959</string>
 				<key>content</key>
 				<array>
 					<dict>
@@ -754,8 +754,8 @@
 		<key>windows</key>
 		<array>
 			<dict>
-				<key>isFavorite</key>
-				<false/>
+				<key>id</key>
+				<integer>7</integer>
 				<key>calories</key>
 				<string>0</string>
 				<key>timeNeeded</key>
@@ -763,9 +763,9 @@
 				<key>title</key>
 				<string>Progress</string>
 				<key>thumbnail</key>
-				<string>7</string>
+				<string>8</string>
 				<key>artworkColor</key>
-				<string>C07895</string>
+				<string>024873</string>
 				<key>content</key>
 				<array>
 					<dict>
@@ -876,8 +876,8 @@
 				</array>
 			</dict>
 			<dict>
-				<key>isFavorite</key>
-				<false/>
+				<key>id</key>
+				<integer>8</integer>
 				<key>calories</key>
 				<string>0</string>
 				<key>timeNeeded</key>
@@ -887,7 +887,7 @@
 				<key>thumbnail</key>
 				<string>8</string>
 				<key>artworkColor</key>
-				<string>79E5FF</string>
+				<string>024873</string>
 				<key>content</key>
 				<array>
 					<dict>

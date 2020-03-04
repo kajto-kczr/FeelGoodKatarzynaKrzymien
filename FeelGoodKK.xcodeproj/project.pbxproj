@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		720DB5BD240D13B7003253DA /* ExerciseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720DB5BC240D13B7003253DA /* ExerciseCell.swift */; };
 		724A7C912403FB3C003A2D5D /* ProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724A7C902403FB3C003A2D5D /* ProgressViewController.swift */; };
 		724FFEBD23FAD9B700BBA58D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724FFEBC23FAD9B700BBA58D /* AppDelegate.swift */; };
 		724FFEBF23FAD9B700BBA58D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724FFEBE23FAD9B700BBA58D /* SceneDelegate.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		02CDCB65F687D9902EDA9FC3 /* Pods-FeelGoodKK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FeelGoodKK.release.xcconfig"; path = "Target Support Files/Pods-FeelGoodKK/Pods-FeelGoodKK.release.xcconfig"; sourceTree = "<group>"; };
+		720DB5BC240D13B7003253DA /* ExerciseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseCell.swift; sourceTree = "<group>"; };
 		724A7C902403FB3C003A2D5D /* ProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressViewController.swift; sourceTree = "<group>"; };
 		724FFEB923FAD9B700BBA58D /* FeelGoodKK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeelGoodKK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		724FFEBC23FAD9B700BBA58D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				724FFEE723FAF13000BBA58D /* TitleSuplementaryView.swift */,
 				726D70D523FBF9B0009337F8 /* ElementCell.swift */,
 				726C3B7A240030EB0082E08B /* FavoriteCell.swift */,
+				720DB5BC240D13B7003253DA /* ExerciseCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				724FFEDA23FAE21D00BBA58D /* GradientView.swift in Sources */,
 				724A7C912403FB3C003A2D5D /* ProgressViewController.swift in Sources */,
 				724FFEBF23FAD9B700BBA58D /* SceneDelegate.swift in Sources */,
+				720DB5BD240D13B7003253DA /* ExerciseCell.swift in Sources */,
 				726C3B7B240030EB0082E08B /* FavoriteCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

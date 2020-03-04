@@ -63,12 +63,22 @@ class FavoritesViewController: UIViewController, UICollectionViewDelegate, UICol
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FavoriteCell.reuseIdentifier, for: indexPath) as? FavoriteCell else {
             fatalError("Error Cell")
         }
+        cell.contentView.layer.cornerRadius = 10
+        cell.contentView.layer.borderWidth = 1.0
+        cell.contentView.layer.borderColor = UIColor(red: 109/255, green: 155/255, blue: 166/255, alpha: 0.65).cgColor
+        cell.contentView.layer.masksToBounds = true
+        
+        cell.layer.shadowColor = UIColor(red: 25/255, green: 98/255, blue: 115/255, alpha: 0.45).cgColor
+        cell.layer.shadowOffset = CGSize(width: 10, height: 10)
+        cell.layer.shadowOpacity = 0.7
+        cell.layer.shadowRadius = 5
+        cell.layer.masksToBounds = false
+        cell.clipsToBounds = false
+        
         
         cell.favoriteTitleLabel.text = favoritesCollections[indexPath.row].title
         cell.favoriteImageView.image = favoritesCollections[indexPath.row].image
-        cell.favoriteImageView.layer.masksToBounds = true
         cell.favoriteImageView.backgroundColor = favoritesCollections[indexPath.row].imageBackgroundColor
-        cell.layer.cornerRadius = 10
         return cell
     }
     

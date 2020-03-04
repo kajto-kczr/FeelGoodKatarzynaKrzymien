@@ -14,9 +14,9 @@ class ElementViewController: UIViewController {
     static let identifier = String(describing: ElementViewController.self)
     @IBOutlet weak var videoView: WKWebView!
     private let element: [Element]
-    @IBOutlet weak var scrollView: UIScrollView!
     var progressArray: [String] = []
     @IBOutlet weak var backgroundView: UIView!
+    @IBOutlet weak var exerciseCollectionView: UICollectionView!
     
     
     required init?(coder: NSCoder) {
@@ -34,8 +34,6 @@ class ElementViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        setupViews()
         let titleString = UserDefaults.standard.string(forKey: "title") ?? "Feel Good"
         title = titleString
         let arr = UserDefaults.standard.array(forKey: "progressArray")
@@ -53,8 +51,8 @@ class ElementViewController: UIViewController {
             NSLayoutConstraint.activate([videoView.heightAnchor.constraint(equalToConstant: 200)])
         }
         
-        backgroundView.backgroundColor = UIColor(red: 2/255, green: 72/255, blue: 115/255, alpha: 0.45)
-        
+        exerciseCollectionView.dataSource = self
+        exerciseCollectionView.collectionViewLayout = configureCollectionViewLayout()
     }
     
     @objc func doneTapped() {
@@ -70,46 +68,54 @@ class ElementViewController: UIViewController {
         present(alert, animated: true)
     }
     
-    
-    private func setupViews() {
-        let screenSize = UIScreen.main.bounds
-        let screenWidth = screenSize.width
-        
-        self.scrollView.contentSize = CGSize(width: screenWidth - 48, height: screenSize.height * 0.7)
-        
-        
-        let lbl1 = UILabel(frame: CGRect(x: 10, y: 8, width: screenWidth * 0.9, height: 20))
-        lbl1.text = element[0].info
-        lbl1.myLabel()
-        scrollView.addSubview(lbl1)
-        
-        let lbl2 = UILabel(frame: CGRect(x: 10, y: lbl1.frame.maxY + 25, width: screenWidth * 0.9, height: 20))
-        lbl2.text = "Description: \n\n" + element[0].description
-        lbl2.myLabel()
-        scrollView.addSubview(lbl2)
-        
-        
-        
-        let lbl3 = UILabel(frame: CGRect(x: 10, y: lbl2.frame.maxY + 25, width: screenWidth * 0.9, height: 20))
-        lbl3.text = "Repeat: \n\n" + element[0].repetition
-        print(scrollView.frame.midX)
-        print(lbl3.frame.midX)
-        lbl3.myLabel()
-        scrollView.addSubview(lbl3)
-        
-        let lbl4 = UILabel(frame: CGRect(x: 10, y: lbl3.frame.maxY + 25, width: screenWidth * 0.9, height: 20))
-        lbl4.text = "Purpose: \n\n" + element[0].point
-        lbl4.myLabel()
-        scrollView.addSubview(lbl4)
-        
-        scrollView.sizeToFit()
-        
-        lbl1.center.x = self.view.center.x
-        lbl2.center.x = self.view.center.x
-        lbl3.center.x = self.view.center.x
-        lbl4.center.x = self.view.center.x
-        
-        
+    func configureCollectionViewLayout() -> UICollectionViewCompositionalLayout {
+        let sectionProvider = { (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
+            
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+                let item = NSCollectionLayoutItem(layoutSize: itemSize)
+                item.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
+                let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.6), heightDimension: .fractionalHeight(1.0))
+                let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitem: item, count: 2)
+                let trailingItemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(0.45))
+                let trailingItem = NSCollectionLayoutItem(layoutSize: trailingItemSize)
+                trailingItem.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
+                let trailingGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.3), heightDimension: .fractionalHeight(1.0))
+                
+                let trailingGroup = NSCollectionLayoutGroup.vertical(layoutSize: trailingGroupSize, subitem: trailingItem, count: 2)
+                let containerGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.5), heightDimension: .fractionalHeight(1.0))
+                let containerGroup = NSCollectionLayoutGroup.horizontal(layoutSize: containerGroupSize, subitems: [group, trailingGroup])
+                
+                let section = NSCollectionLayoutSection(group: containerGroup)
+                section.orthogonalScrollingBehavior = .continuous
+                section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
+                section.interGroupSpacing = 10
+                
+                return section
+            } else {
+                let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+                let item = NSCollectionLayoutItem(layoutSize: itemSize)
+                item.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
+                let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(0.75))
+                let group = NSCollectionLayoutGroup.vertical(layoutSize: groupSize, subitem: item, count: 2)
+                let trailingItemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.3), heightDimension: .fractionalHeight(1.0))
+                let trailingItem = NSCollectionLayoutItem(layoutSize: trailingItemSize)
+                trailingItem.contentInsets = NSDirectionalEdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8)
+                let trailingGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(0.25))
+                
+                let trailingGroup = NSCollectionLayoutGroup.horizontal(layoutSize: trailingGroupSize, subitem: trailingItem, count: 2)
+                let containerGroupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(2.2))
+                let containerGroup = NSCollectionLayoutGroup.vertical(layoutSize: containerGroupSize, subitems: [group, trailingGroup])
+                
+                let section = NSCollectionLayoutSection(group: containerGroup)
+                section.orthogonalScrollingBehavior = .continuous
+                section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
+                section.interGroupSpacing = 10
+                
+                return section
+            }
+        }
+        return UICollectionViewCompositionalLayout(sectionProvider: sectionProvider)
     }
     
     func loadYoutube(videoID: String) {
@@ -118,22 +124,38 @@ class ElementViewController: UIViewController {
         }
         videoView.load(URLRequest(url: youtubeURL))
     }
-    
-    @IBAction func backBtnTapped(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
 }
 
-extension UILabel {
-    func myLabel() {
-        textAlignment = .center
-        textColor = .white
-        backgroundColor = UIColor(red: 83/255, green: 119/255, blue: 166/255, alpha: 0.65)
-        layer.cornerRadius = 10
-        layer.masksToBounds = true
-        font = UIFont.systemFont(ofSize: 17)
-        numberOfLines = 0
-        lineBreakMode = .byWordWrapping
-        sizeToFit()
+extension ElementViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {4
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ExerciseCell.reuseIdentifier, for: indexPath) as? ExerciseCell else {
+            fatalError("Couldn‘t create exercise cell")
+        }
+        let arrDescriptions = [element[0].info, element[0].description, element[0].repetition, element[0].point]
+        let arrTitle = ["Info", "Description", "Repeat", "Purpose"]
+        
+        cell.contentView.backgroundColor = UIColor(red: 8/255, green: 74/255, blue: 89/255, alpha: 1)
+        cell.contentView.layer.cornerRadius = 10
+        cell.contentView.layer.borderWidth = 1.0
+        cell.contentView.layer.borderColor = UIColor(red: 109/255, green: 155/255, blue: 166/255, alpha: 0.65).cgColor
+        cell.contentView.layer.masksToBounds = true
+        cell.layer.shadowColor = UIColor(red: 25/255, green: 98/255, blue: 115/255, alpha: 0.45).cgColor
+        cell.layer.shadowOffset = CGSize(width: 10, height: 10)
+        cell.layer.shadowOpacity = 0.7
+        cell.layer.shadowRadius = 5
+        cell.layer.masksToBounds = false
+        cell.clipsToBounds = false
+        cell.titleLabel.textColor = UIColor(red: 191/255, green: 214/255, blue: 217/255, alpha: 0.85)
+        cell.descriptionLabel.text = arrDescriptions[indexPath.row]
+        cell.titleLabel.text = arrTitle[indexPath.row]
+        
+        if UIDevice.current.userInterfaceIdiom == .phone {
+            cell.descriptionLabel.font = UIFont(name: "System", size: 14)
+        }
+        
+        return cell
     }
 }

@@ -19,7 +19,7 @@
 				<key>thumbnail</key>
 				<string>1</string>
 				<key>artworkColor</key>
-				<string>5377A6</string>
+				<string>084A59</string>
 				<key>content</key>
 				<array>
 					<dict>
@@ -133,7 +133,7 @@
 				<key>id</key>
 				<integer>2</integer>
 				<key>calories</key>
-				<string>200kcal</string>
+				<string>200 kcal</string>
 				<key>timeNeeded</key>
 				<string>20 min</string>
 				<key>title</key>
@@ -141,7 +141,7 @@
 				<key>thumbnail</key>
 				<string>6</string>
 				<key>artworkColor</key>
-				<string>5377A6</string>
+				<string>084A59</string>
 				<key>content</key>
 				<array>
 					<dict>
@@ -263,7 +263,7 @@
 				<key>thumbnail</key>
 				<string>3</string>
 				<key>artworkColor</key>
-				<string>5377A6</string>
+				<string>084A59</string>
 				<key>content</key>
 				<array>
 					<dict>
@@ -392,7 +392,7 @@
 				<key>thumbnail</key>
 				<string>4</string>
 				<key>artworkColor</key>
-				<string>025959</string>
+				<string>084A59</string>
 				<key>content</key>
 				<array>
 					<dict>
@@ -514,7 +514,7 @@
 				<key>thumbnail</key>
 				<string>5</string>
 				<key>artworkColor</key>
-				<string>025959</string>
+				<string>084A59</string>
 				<key>content</key>
 				<array>
 					<dict>
@@ -636,7 +636,7 @@
 				<key>thumbnail</key>
 				<string>6</string>
 				<key>artworkColor</key>
-				<string>025959</string>
+				<string>084A59</string>
 				<key>content</key>
 				<array>
 					<dict>
@@ -765,7 +765,7 @@
 				<key>thumbnail</key>
 				<string>8</string>
 				<key>artworkColor</key>
-				<string>024873</string>
+				<string>084A59</string>
 				<key>content</key>
 				<array>
 					<dict>
@@ -887,7 +887,7 @@
 				<key>thumbnail</key>
 				<string>8</string>
 				<key>artworkColor</key>
-				<string>024873</string>
+				<string>084A59</string>
 				<key>content</key>
 				<array>
 					<dict>

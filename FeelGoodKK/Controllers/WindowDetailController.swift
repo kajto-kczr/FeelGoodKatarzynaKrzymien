@@ -42,7 +42,6 @@ final class WindowDetailController: UIViewController, UICollectionViewDataSource
         super.viewDidLoad()
         
         setupView()
-        
     }
     
 //    @objc func navBarItemTapped() {
@@ -55,11 +54,18 @@ final class WindowDetailController: UIViewController, UICollectionViewDataSource
         
         self.title = window.title
         
-        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-//        layout.itemSize = CGSize(width: screenWidth * 0.45, height: screenWidth / 5)
-        layout.itemSize = CGSize(width: screenWidth, height: screenSize.height / 5)
-        collectionView.collectionViewLayout = layout
+        if UIDevice.current.userInterfaceIdiom == .pad {
+            NSLayoutConstraint.activate([windowCoverImageView.heightAnchor.constraint(equalToConstant: 320)])
+        } else {
+            NSLayoutConstraint.activate([windowCoverImageView.heightAnchor.constraint(equalToConstant: 200)])
+        }
+        
+//        let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
+//        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+////        layout.itemSize = CGSize(width: screenWidth * 0.45, height: screenWidth / 5)
+//        layout.itemSize = CGSize(width: screenWidth, height: screenSize.height / 5)
+//        collectionView.collectionViewLayout = layout
+        collectionView.collectionViewLayout = configureCollectionViewLayout()
         collectionView.dataSource = self
         collectionView.delegate = self
         
@@ -75,6 +81,34 @@ final class WindowDetailController: UIViewController, UICollectionViewDataSource
             addToFavoriteButton.setTitle("Make Favorite", for: UIControl.State())
         }
         
+    }
+    
+    func configureCollectionViewLayout() -> UICollectionViewCompositionalLayout {
+        let sectionProvider = { (sectionIndex: Int, layoutEnvironment: NSCollectionLayoutEnvironment) -> NSCollectionLayoutSection? in
+            
+            let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+            let item = NSCollectionLayoutItem(layoutSize: itemSize)
+            item.contentInsets = NSDirectionalEdgeInsets(top: 4, leading: 0, bottom: 4, trailing: 4)
+            
+            var groupSize: NSCollectionLayoutSize!
+            
+            if UIDevice.current.userInterfaceIdiom == .pad {
+                groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.35), heightDimension: .fractionalHeight(1.0))
+            } else {
+                groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(0.5), heightDimension: .fractionalHeight(1.0))
+            }
+            
+            
+            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+            
+            let section = NSCollectionLayoutSection(group: group)
+            section.orthogonalScrollingBehavior = .continuous
+            section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0)
+            section.interGroupSpacing = 10
+            
+            return section
+        }
+        return UICollectionViewCompositionalLayout(sectionProvider: sectionProvider)
     }
     
     @IBAction func addToFavoritesTapped(_ sender: Any) {
@@ -107,20 +141,22 @@ final class WindowDetailController: UIViewController, UICollectionViewDataSource
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ElementCell.reuseIdentifier, for: indexPath) as? ElementCell else {
             fatalError("ERROR CELL")
         }
-        let gradientColors = [window.imageBackgroundColor?.cgColor, UIColor.black.cgColor]
-        let gradientLayer: CAGradientLayer = CAGradientLayer()
-        gradientLayer.frame.size = cell.elementContentView.frame.size
-        gradientLayer.colors = gradientColors
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
-        cell.elementContentView.layer.insertSublayer(gradientLayer, at: 0)
-        cell.layer.cornerRadius = 10
+        
+        cell.contentView.backgroundColor = window.imageBackgroundColor
+        cell.contentView.layer.cornerRadius = 10
+        cell.contentView.layer.borderWidth = 1.0
+        cell.contentView.layer.borderColor = UIColor(red: 109/255, green: 155/255, blue: 166/255, alpha: 0.65).cgColor
+        cell.contentView.layer.masksToBounds = true
+        cell.layer.shadowColor = UIColor(red: 25/255, green: 98/255, blue: 115/255, alpha: 0.45).cgColor
+        cell.layer.shadowOffset = CGSize(width: 10, height: 10)
+        cell.layer.shadowOpacity = 0.7
+        cell.layer.shadowRadius = 5
+        cell.layer.masksToBounds = false
+        cell.clipsToBounds = false
         cell.elementTitleLabel.numberOfLines = 0
         cell.elementTitleLabel.lineBreakMode = .byWordWrapping
-        cell.elementTitleLabel.text = "\(indexPath.row + 1). " + window.content[indexPath.row].title
+        cell.elementTitleLabel.text = "\(indexPath.row + 1). \n" + window.content[indexPath.row].title
         cell.elementTitleLabel.textColor = UIColor.white
-        cell.elementImageView.image = window.content[indexPath.row].image
-        cell.elementImageView.layer.cornerRadius = 10
         return cell
     }
     

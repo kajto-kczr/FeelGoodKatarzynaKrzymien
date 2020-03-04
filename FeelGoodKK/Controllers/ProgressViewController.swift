@@ -14,11 +14,11 @@ import ScrollableGraphView
 class ProgressViewController: UIViewController, ScrollableGraphViewDataSource {
     
     
-    let uiColors: [UIColor] = [UIColor(red: 83/255, green: 119/255, blue: 166/255, alpha: 0.65),
-                               UIColor(red: 2/255, green: 72/255, blue: 115/255, alpha: 0.45),
-                               UIColor(red: 2/255, green: 89/255, blue: 89/255, alpha: 0.35),
-                               UIColor(red: 2/255, green: 115/255, blue: 104/255, alpha: 0.45),
-                               UIColor(red: 13/255, green: 13/255, blue: 13/255, alpha: 0.05)]
+    let uiColors: [UIColor] = [UIColor(red: 8/255, green: 74/255, blue: 89/255, alpha: 1),
+                               UIColor(red: 25/255, green: 98/255, blue: 115/255, alpha: 0.45),
+                               UIColor(red: 109/255, green: 155/255, blue: 166/255, alpha: 0.65),
+                               UIColor(red: 191/255, green: 214/255, blue: 217/255, alpha: 0.85),
+                               UIColor(red: 242/255, green: 242/255, blue: 242/255, alpha: 0.95)]
     static let identifier = String(describing: ProgressViewController.self)
     @IBOutlet weak var backgroundView: UIView!
     
@@ -53,34 +53,57 @@ class ProgressViewController: UIViewController, ScrollableGraphViewDataSource {
     var orangeLinePlotData: [Double] = []
     var datesArray: [String] = []
     var exercisesArray: [String] = []
+    var completeDatesArray: [String] = []
     
     override func viewWillAppear(_ animated: Bool) {
         let arr = UserDefaults.standard.array(forKey: "progressArray")
-        guard arr != nil else { return }
-        print(arr as! [String])
+        guard arr != nil else {
+            blueLinePlotData = [0, 0]
+            orangeLinePlotData = [0, 0]
+            let today = Date()
+            let tommorow = Date(timeInterval: 86400, since: today)
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            datesArray.append(formatter.string(from: today))
+            datesArray.append(formatter.string(from: tommorow))
+            getMissingDates(firstDate: datesArray[0], secondDate: datesArray[datesArray.count-1])
+            return
+        }
+        
         for element in arr! {
             let line = element as! String
             let parts = line.components(separatedBy: ";")
             datesArray.append(parts[0])
             exercisesArray.append(parts[1])
         }
-
+        
+        if datesArray.removeDuplicates().count == 1 {
+            let tommorow = Date(timeInterval: 86400, since: Date())
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd"
+            datesArray.append(formatter.string(from: tommorow))
+        }
+        getMissingDates(firstDate: datesArray[0], secondDate: datesArray[datesArray.count-1])
+        
         var countArr: [Double] = []
-        var count = 1.0
-        for i in 0..<datesArray.count {
-            if i == datesArray.count-1 {
+        var count = 0.0
+        for i in 0..<completeDatesArray.count {
+            if i == completeDatesArray.count - 1 {
                 blueLinePlotData = countArr
-                print(countArr)
                 orangeLinePlotData = countArr
-                let datesArrWithoutduplicates = datesArray.removeDuplicates()
-                print("Dates: \(datesArrWithoutduplicates)")
                 return
             }
-            if datesArray[i] == datesArray[i+1] {
-                count += 1
+            if datesArray.contains(completeDatesArray[i]) {
+                for element in datesArray {
+                    if element == completeDatesArray[i] {
+                        count += 1
+                    }
+                }
+                countArr.append(count)
+                count = 0
             } else {
                 countArr.append(count)
-                count = 1.0
+                count = 0
             }
         }
     }
@@ -104,11 +127,11 @@ class ProgressViewController: UIViewController, ScrollableGraphViewDataSource {
         
         
         backgroundView.backgroundColor = uiColors[1]
-        monthHeaderView.backgroundColor = uiColors[0] //3
+        monthHeaderView.backgroundColor = uiColors[0].withAlphaComponent(0.5) //3
         monthHeaderView.layer.cornerRadius = 10
         monthHeaderView.translatesAutoresizingMaskIntoConstraints = false
         
-        weekDaysView.backgroundColor = uiColors[0] //3
+        weekDaysView.backgroundColor = uiColors[0].withAlphaComponent(0.5)
         weekDaysView.layer.cornerRadius = 10
         
         // MARK: - Graph -
@@ -135,14 +158,11 @@ class ProgressViewController: UIViewController, ScrollableGraphViewDataSource {
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        monthHeaderView.frame = CGRect(x: 0, y: view.frame.minY + 8, width: backgroundView.frame.width, height: backgroundView.frame.height * 0.08)
-        //        monthHeaderView.center.x = view.center.x
+        monthHeaderView.frame = CGRect(x: 0, y: view.frame.minY + 8, width: backgroundView.frame.width * 0.95, height: backgroundView.frame.height * 0.08)
+        monthHeaderView.center.x = view.center.x
         
         weekDaysView.frame = CGRect(x: 0, y: monthHeaderView.frame.maxY + 8, width: backgroundView.frame.width * 0.95, height: monthHeaderView.frame.height * 0.75)
         weekDaysView.center.x = view.center.x
-        
-        
-        
         
         if calendarView.frame == .zero {
             calendarView.frame = CGRect(x: 0, y: weekDaysView.frame.maxY, width: backgroundView.frame.width * 0.95, height: view.frame.height * 0.25)
@@ -151,15 +171,83 @@ class ProgressViewController: UIViewController, ScrollableGraphViewDataSource {
         }
     }
     
-    
+    func getMissingDates(firstDate: String, secondDate: String) {
+        let dictMonthLastDay: [String:Int] = ["01":31, "02":28, "03":31, "04":30, "05":31, "06":30, "07":31, "08":31, "09":30, "10":31, "11":30, "12":31]
+        var count = 0
+        
+        let start = firstDate.index(firstDate.startIndex, offsetBy: 5)
+        let end = firstDate.index(firstDate.startIndex, offsetBy: 7)
+        let range = start..<end
+        
+        let firstDay = Int(String(firstDate.suffix(2)))!
+        let firstMonth = String(firstDate[range])
+        let secondDay = Int(String(secondDate.suffix(2)))!
+        let secondMonth = String(secondDate[range])
+        
+        let monthDifference = (Int(secondMonth)! - Int(firstMonth)!) - 1
+        
+        if monthDifference > 0 {
+            for i in 0...monthDifference {
+                if i == 0 {
+                    continue
+                }
+                
+                var monthAfter = String(Int(firstMonth)! + i)
+                if monthAfter.count == 1 {
+                    monthAfter.insert("0", at: monthAfter.startIndex)
+                }
+                let daysMonthsBetween = dictMonthLastDay[monthAfter]
+                count += daysMonthsBetween!
+            }
+            count += secondDay
+            let missingDaysFirstMonth = dictMonthLastDay[String(firstMonth)]! - firstDay
+            count += (missingDaysFirstMonth + 1)
+        } else if monthDifference == 0 {
+            count = (dictMonthLastDay[firstMonth]! - (firstDay-1)) + secondDay
+        } else {
+            count = secondDay - firstDay
+        }
+        
+        var currentDay = firstDay
+        var currentMonth = firstMonth
+        
+        
+        for i in 0..<count {
+            if i == 0 {
+                if String(currentDay).count == 2 {
+                    completeDatesArray.append("2020-"+currentMonth+"-"+String(currentDay))
+                    continue
+                } else {
+                    var newDayString = String(currentDay)
+                    newDayString.insert("0", at: newDayString.startIndex)
+                    completeDatesArray.append("2020-"+currentMonth+"-"+newDayString)
+                }
+            }
+            
+            currentDay += 1
+            if currentDay > dictMonthLastDay[currentMonth]! {
+                currentDay -= dictMonthLastDay[currentMonth]!
+                let newMonth = Int(currentMonth)! + 1
+                currentMonth = String(newMonth)
+                if currentMonth.count == 1 {
+                    currentMonth.insert("0", at: currentMonth.startIndex)
+                }
+            }
+            var stringDay = String(currentDay)
+            if stringDay.count == 1 {
+                stringDay.insert("0", at: stringDay.startIndex)
+            }
+            completeDatesArray.append("2020-"+currentMonth+"-"+stringDay)
+        }
+    }
     
     func setupGraph() {
         let calendarHeight = backgroundView.frame.height - (monthHeaderView.frame.minY + calendarView.frame.maxY)
         let frame = CGRect(x: 0, y: calendarView.frame.maxY, width: view.frame.width * 0.95, height: calendarHeight)
         let graphView = ScrollableGraphView(frame: frame, dataSource: self)
         graphView.center.x = view.center.x
+        graphView.direction = .rightToLeft
         graphView.layer.cornerRadius = 10
-        
         
         // MARK: - first Line -
         let blueLinePlot = LinePlot(identifier: "multiBlue")
@@ -168,7 +256,7 @@ class ProgressViewController: UIViewController, ScrollableGraphViewDataSource {
         blueLinePlot.lineStyle = ScrollableGraphViewLineStyle.smooth
         blueLinePlot.shouldFill = true
         blueLinePlot.fillType = ScrollableGraphViewFillType.solid
-        blueLinePlot.fillColor = uiColors[2].withAlphaComponent(0.5)
+        blueLinePlot.fillColor = uiColors[0].withAlphaComponent(0.5)
         blueLinePlot.adaptAnimationType = .elastic
         
         // MARK: - second Line -
@@ -178,7 +266,7 @@ class ProgressViewController: UIViewController, ScrollableGraphViewDataSource {
         orangeLinePlot.lineStyle = ScrollableGraphViewLineStyle.smooth
         orangeLinePlot.shouldFill = true
         orangeLinePlot.fillType = ScrollableGraphViewFillType.solid
-        orangeLinePlot.fillColor = uiColors[3].withAlphaComponent(0.5)
+        orangeLinePlot.fillColor = uiColors[1].withAlphaComponent(0.5)
         orangeLinePlot.adaptAnimationType = .elastic
         
         // MARK: - reference Lines -
@@ -197,7 +285,6 @@ class ProgressViewController: UIViewController, ScrollableGraphViewDataSource {
         graphView.addReferenceLines(referenceLines: referenceLines)
         graphView.addPlot(plot: blueLinePlot)
         graphView.addPlot(plot: orangeLinePlot)
-        //        self.view.addSubview(graphView)
         backgroundView.addSubview(graphView)
     }
     
@@ -206,14 +293,15 @@ class ProgressViewController: UIViewController, ScrollableGraphViewDataSource {
         case "multiBlue":
             return blueLinePlotData[pointIndex]
         case "multiOrange":
-            return blueLinePlotData[pointIndex] + 2
+            return blueLinePlotData[pointIndex]
         default:
             return 0
         }
     }
     
     func label(atIndex pointIndex: Int) -> String {
-        let datesArrWithoutDuplicates = datesArray.removeDuplicates()
+        //        let datesArrWithoutDuplicates = datesArray.removeDuplicates()
+        let datesArrWithoutDuplicates = completeDatesArray.removeDuplicates()
         return "\(datesArrWithoutDuplicates[pointIndex])"
     }
     
